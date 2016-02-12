@@ -1,0 +1,22 @@
+{
+    "name": "GTD: Trello List Layouts",
+    "description": "See your Trello lists differently",
+    "version": "0.1",
+    "manifest_version": 2,
+    "icons": {
+        "128": "images/icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://trello.com/*"],
+        "js": ["js/jquery.min.js", "js/gtd-listlayouts.js"],
+        "css": ["css/gtd-listlayouts.css"],
+        "run_at": "document_end"
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "*://trello.com/*", "tabs", "webNavigation"
+    ]
+}
