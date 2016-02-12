@@ -1,6 +1,6 @@
 {
-    "name": "GTD: Trello List Layouts",
-    "description": "See your Trello lists differently",
+    "name": "GTD Trello",
+    "description": "Get Things Done with Trello!",
     "version": "0.1",
     "manifest_version": 2,
     "icons": {
@@ -8,8 +8,8 @@
     },
     "content_scripts": [{
         "matches": ["*://trello.com/*"],
-        "js": ["js/jquery.min.js", "js/gtd-listlayouts.js"],
-        "css": ["css/gtd-listlayouts.css"],
+        "js": ["js/jquery.min.js", "js/gtd-trello.js"],
+        "css": ["css/gtd-trello.css"],
         "run_at": "document_end"
     }],
     "background": {
