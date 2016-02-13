@@ -9,74 +9,58 @@ Then it will check for the classes and check the appropriate radio button.  I us
 be an x where the button is.  You can change this in the css.  When the x is clicked then it removes the active class and removes the popup window.
 */
 
+/************************************************************************
+	GTD Trello (defaults)
+*************************************************************************/
     // Append ".gtd-trello" class to body
     $("body").addClass("gtd-trello");
 
-    // Append ".gtd-icon" to the Trello List header
-    $(".list-header").append( "<a class='list-header-menu-icon icon-sm icon-dropdown-menu dark-hover gtd-icon' href='javascript:void(0)'></a>" );
 
-    // When icon is clicked, open up the "List Layouts" popup
-    $('.gtd-icon').on('click', function() {
-
-        $('.gtd-popup').remove();
-        if(!$(this).parents('.list-wrapper').hasClass("active")){
-            $(this).parents('.list-wrapper').append(
-
-            '<div class="gtd-popup">' +
-                '<div class=pop-over-header>' +
-                    '<span class=pop-over-header-title>List Layouts</span>' +
-                    '<a href=# class="pop-over-header-close-btn icon-sm icon-close"></a>' +
-                '</div>' +
-
-                '<div class="pop-over-content js-pop-over-content u-fancy-scrollbar js-tab-parent">' +
-                    '<form class=gtd-layouts>' +
-                        '<ul class=pop-over-list>' +
-                            '<li>' +
-                                '<input type=radio name=listLayout id=listNormal>' +
-                                '<label for=listNormal>Normal</label>' +
-                            '</li>' +
-                            '<li>' +
-                                '<input type=radio name=listLayout id=listYellow>' +
-                                '<label for=listYellow>Yellow</label>' +
-                            '</li>' +
-                            '<li>' +
-                                '<input type=radio name=listLayout id=listGreen>' +
-                                '<label for=listGreen>Green</label>' +
-                            '</li>' +
-                            '<li>' +
-                                '<input type=radio name=listLayout id=listBlue>' +
-                                '<label for=listBlue>Blue</label>' +
-                            '</li>' +
-                        '</ul>' +
-                    '</form>' +
-                '</div>' +
-            '</div>')
-            .children(':last').hide().fadeIn(0);
-
-            if($(this).parents('.list-wrapper').hasClass("listYellow")){
-                $('#listYellow').prop('checked', true);
-
-            }else if($(this).parents('.list-wrapper').hasClass("listGreen")){
-                $('#listGreen').prop('checked', true);
-
-            }else if($(this).parents('.list-wrapper').hasClass("listBlue")){
-                $('#listBlue').prop('checked', true);
-
-            }else{
-                $('#listNormal').prop('checked', true);
-            }
-        }else{
-            $(this).parents('.list-wrapper').find('.gtd-popup').remove();
-        }
-        $(this).parents('.list-wrapper').toggleClass("active");
-        $(this).parents('.list-wrapper').siblings().removeClass("active");
+/************************************************************************
+	GTD Trello (Card Totals)
+*************************************************************************/
+    // Remove "cards" from card totals
+    $('.list-header-num-cards:contains(" cards")').each(function(){
+        $(this).html($(this).html().split(" cards").join(""));
     });
 
-    // Add a class to the main parent, ".list-wrapper"
-    $(document).on("change", ".gtd-layouts input", function(){
-        var newClass = $(this).attr("id");
-        $(this).parents( ".list-wrapper" ).removeClass("listNormal listYellow listGreen listBlue");
-        $(this).parents( ".list-wrapper" ).addClass(newClass);
+  	$('.list-header-num-cards:contains(" card")').each(function(){
+        $(this).html($(this).html().split(" card").join(""));
+    });
+
+
+/************************************************************************
+	GTD Trello (PIPE Layout)
+*************************************************************************/
+    // Add "gtd-pipe" class
+    $('h2:contains("(PIPE)")').parents('.js-list').addClass('gtd-pipe');
+
+    // Remove "(PIPE)" text from list titles
+    $('h2:contains("(PIPE)")').each(function(){
+        $(this).html($(this).html().split(" (PIPE)").join(""));
+    });
+
+
+    // Show "Card Details"
+    $( ".gtd-pipe .list-card-cover" ).on( "mouseover", function() {
+        var rect 	    =   this.getBoundingClientRect (),
+            top 	    =   rect.top,
+            right 	 =   rect.right,
+            bottom 	 =   rect.bottom,
+            left 	    =   rect.left,
+            height	 =   rect.bottom - rect.top,
+            width 	 =   rect.right - rect.left,
+            position  =   left + width;
+
+         $(this).parent().find(".list-card-details")
+            .clone().appendTo('body')
+            .addClass('gtd-active')
+            .css({ 'position' : 'fixed', 'top' : top+ 'px', 'left' : position+ 'px' });
+    });
+
+    // Remove "Card Details"
+    $( '.gtd-pipe .list-card-cover' ).on( "mouseout", function() {
+        $('.list-card-details.gtd-active').remove();
     });
 
 
