@@ -8,7 +8,7 @@
     },
     "content_scripts": [{
         "matches": ["*://trello.com/*"],
-        "js": ["js/jquery.min.js", "js/gtd-trello.js"],
+        "js": ["lib/jquery.min.js", "js/gtd-trello.js"],
         "css": ["css/gtd-trello.css"],
         "run_at": "document_end"
     }],
