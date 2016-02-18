@@ -1,15 +1,30 @@
 {
     "name": "GTD Trello",
     "description": "Get Things Done with Trello!",
-    "version": "0.1",
+    "version": "0.2",
     "manifest_version": 2,
     "icons": {
         "128": "images/icon.png"
     },
     "content_scripts": [{
         "matches": ["*://trello.com/*"],
-        "js": ["lib/jquery.min.js", "js/gtd-trello.js"],
-        "css": ["css/gtd-trello.css"],
+
+        "js": [
+            "lib/jquery.min.js",
+            "gtd-trello/card-counts/card-counts.js",
+            "gtd-trello/card-dates/card-dates.js",
+            "gtd-trello/list-separators/list-separators.js",
+            "gtd-trello/list-pipes/list-pipes.js",
+            "gtd-trello/gtd-trello.js"],
+
+        "css": [
+            "gtd-trello/gtd-trello.css",
+            "gtd-trello/list-colors/list-colors.css",
+            "gtd-trello/card-counts/card-counts.css",
+            "gtd-trello/card-dates/card-dates.css",
+            "gtd-trello/list-separators/list-separators.css",
+            "gtd-trello/list-pipes/list-pipes.css"],
+
         "run_at": "document_end"
     }],
     "background": {
@@ -17,6 +32,8 @@
     },
 
     "permissions": [
-        "*://trello.com/*", "tabs", "webNavigation"
+        "*://trello.com/*",
+        "tabs",
+        "webNavigation"
     ]
 }

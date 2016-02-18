@@ -1,0 +1,25 @@
+/************************************************************************
+	GTD Trello (Due Dates)
+*************************************************************************/
+/* Badges (default) */
+.badge.is-due-past { background: #cacbcd; animation: blink 1.5s infinite linear; }
+.badge.is-due-now { background: #cacbcd; animation: blink 1.5s infinite linear; }
+.badge.is-due-soon { background: #cacbcd; animation: blink 1.5s infinite linear; }
+.badge.is-due-future {  }
+
+/* Badges (PIPE) */
+.gtd-trello .gtd-pipe .list-card .list-card-cover { border: 7px solid #cacbcd; }
+.gtd-trello .gtd-pipe .list-card .list-card-cover:before { content: ""; border-radius: 100%; display: block; position: absolute; top: -7px; right: -7px; bottom: -7px; left: -7px; z-index: 1; }
+.gtd-trello .gtd-pipe .list-card .list-card-cover:after { content: ""; border-radius: 100%; display: block; position: absolute; top: -7px; right: -7px; bottom: -7px; left: -7px; z-index: 2;  }
+
+.gtd-trello .list-card.is-due-past .list-card-cover:before { background: #EC9488; opacity: .5;  }
+.gtd-trello .list-card.is-due-past .list-card-cover:after { border: 7px solid #CF513D !important; animation: blink 1.5s infinite linear; }
+.gtd-trello .list-card.is-due-now .list-card-cover:after { border: 7px solid #CF513D !important; animation: blink 1.5s infinite linear; }
+.gtd-trello .list-card.is-due-soon .list-card-cover:after { border: 7px solid #F2D600 !important; animation: blink 1.5s infinite linear; }
+.gtd-trello .list-card.is-due-future .list-card-cover:after { border: 7px solid #00C2E0 !important; }
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: .25; }
+    100% { opacity: 1; }
+}

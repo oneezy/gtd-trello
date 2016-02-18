@@ -1,0 +1,8 @@
+/************************************************************************
+	GTD Trello (Default/ Reset)
+*************************************************************************/
+/* Board Wrapper */
+#board { overflow: auto !important; }
+
+/* List Wrapper */
+.gtd-trello .list-wrapper { position: relative; }

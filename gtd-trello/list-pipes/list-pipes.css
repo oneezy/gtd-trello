@@ -1,0 +1,22 @@
+/************************************************************************
+	GTD Trello (PIPE)
+*************************************************************************/
+/* List Wrapper */
+.gtd-trello .list-wrapper.gtd-pipe { width: 120px; }
+
+/* List Header */
+.gtd-trello .list-wrapper.gtd-pipe .list {  }
+
+/* List Cards */
+.gtd-trello .list-wrapper.gtd-pipe .list .list-cards {  }
+
+/* Card Cover */
+.gtd-trello .list-wrapper.gtd-pipe .list .list-cards .list-card { text-align: center; background: transparent; border: none; }
+.gtd-trello .list-wrapper.gtd-pipe .list .list-cards .list-card .list-card-cover { position: relative; display: inline-block; width: 80px !important; height: 80px !important; border-radius: 100%; background-position: center; }
+
+/* Cards Details */
+.gtd-trello .list-wrapper.gtd-pipe .list .list-cards .list-card .list-card-details { display: none; }
+.list-card-details.gtd-active { background: #fff; display: block; width: 200px; text-align: left; border-bottom: 1px solid #ccc; border-radius: 3px; cursor: pointer; }
+
+/* Add Card */
+.gtd-trello .list-wrapper.gtd-pipe .list .list-cards .card-composer .list-card .list-card-details { display: block; }
