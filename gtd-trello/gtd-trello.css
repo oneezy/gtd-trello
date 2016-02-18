@@ -6,3 +6,6 @@
 
 /* List Wrapper */
 .gtd-trello .list-wrapper { position: relative; }
+
+/* List Avatar */
+.gtd-trello .list-wrapper .list .member-avatar { border-radius: 100%; }
