@@ -11,18 +11,25 @@
 
         "js": [
             "lib/jquery.min.js",
+            "gtd-trello/board-tabs/board-tabs.js",
+            "gtd-trello/list-colors/list-colors.js",
             "gtd-trello/card-counts/card-counts.js",
             "gtd-trello/card-dates/card-dates.js",
+            "gtd-trello/card-labels/card-labels.js",
             "gtd-trello/list-separators/list-separators.js",
+            "gtd-trello/list-labels/list-labels.js",
             "gtd-trello/list-pipes/list-pipes.js",
             "gtd-trello/gtd-trello.js"],
 
         "css": [
             "gtd-trello/gtd-trello.css",
+            "gtd-trello/board-tabs/board-tabs.css",
             "gtd-trello/list-colors/list-colors.css",
             "gtd-trello/card-counts/card-counts.css",
             "gtd-trello/card-dates/card-dates.css",
+            "gtd-trello/card-labels/card-labels.css",
             "gtd-trello/list-separators/list-separators.css",
+            "gtd-trello/list-labels/list-labels.css",
             "gtd-trello/list-pipes/list-pipes.css"],
 
         "run_at": "document_end"

@@ -1,0 +1,11 @@
+/************************************************************************
+	GTD Trello (Card Labels)
+*************************************************************************/
+/* Default */
+.gtd-trello .list-card .list-card-details .list-card-labels .card-label { text-shadow: 1px 1px 0 rgba(0,0,0,.54); font-size: 10px; font-weight: normal; text-transform: uppercase; letter-spacing: .5px; line-height: 13pt; padding: 0px 7px; width: auto; height: auto; }
+
+/* Priority */
+.gtd-trello .list-card-details.priority-1 { border-left: 1px solid #ccc; }
+.gtd-trello .list-card-details.priority-2 { border-left: 3px solid #ccc; }
+.gtd-trello .list-card-details.priority-3 { border-left: 7px solid #ccc; }
+.gtd-trello .list-card-details.priority-4 { border-left: 11px solid #ccc; }

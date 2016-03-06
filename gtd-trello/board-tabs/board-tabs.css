@@ -1,0 +1,7 @@
+/************************************************************************
+	GTD Trello (Board Tabs)
+*************************************************************************/
+/* Board Wrapper */
+.gtd-trello .board-header {  }
+.gtd-trello .board-header .gtd-tab { background: rgba(0,0,0, 0);display: inline-block; }
+.gtd-trello .board-header .gtd-tab .board-header-btns.mod-right { position: absolute; top: 0; right: 0; }

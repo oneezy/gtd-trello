@@ -1,0 +1,37 @@
+
+/************************************************************************
+	GTD Trello (List Labels)
+*************************************************************************/
+
+/* Priority (List Labels) */
+.gtd-trello .list-card-details.priority-1 { border-left: 1px solid #ccc; }
+.gtd-trello .list-card-details.priority-2 { border-left: 3px solid #ccc; }
+.gtd-trello .list-card-details.priority-3 { border-left: 7px solid #ccc; }
+.gtd-trello .list-card-details.priority-4 { border-left: 11px solid #ccc; }
+
+
+
+/************************************************************************
+	GTD Trello (Scrum Labels)
+*************************************************************************/
+
+/* Scrum (List Borders) */
+.gtd-trello .list-wrapper .list.gtd-backlog { border-top: 7px solid #fff; }
+.gtd-trello .list-wrapper .list.gtd-todo { border-top: 7px solid #00c2e0; }
+.gtd-trello .list-wrapper .list.gtd-doing { border-top: 7px solid #e6c60d; }
+.gtd-trello .list-wrapper .list.gtd-done { border-top: 7px solid #51e898; }
+.gtd-trello .list-wrapper .list.gtd-blocked { border-top: 7px solid #c4c9cc; }
+
+/* Scrum (List Card Counts) */
+.gtd-trello .list-wrapper .list.gtd-backlog .list-header .list-header-num-cards { background: #000; }
+.gtd-trello .list-wrapper .list.gtd-todo .list-header .list-header-num-cards { background: #00c2e0; }
+.gtd-trello .list-wrapper .list.gtd-doing .list-header .list-header-num-cards { background: #e6c60d; }
+.gtd-trello .list-wrapper .list.gtd-done .list-header .list-header-num-cards { background: #51e898; }
+.gtd-trello .list-wrapper .list.gtd-blocked .list-header .list-header-num-cards { background: #c4c9cc; }
+
+/* Scrum (Border Colors) */
+.gtd-trello .list.gtd-backlog * { border-color: #fff; }
+.gtd-trello .list.gtd-todo * { border-color: #00c2e0; }
+.gtd-trello .list.gtd-doing * { border-color: #e6c60d; }
+.gtd-trello .list.gtd-done * { border-color: #51e898; }
+.gtd-trello .list.gtd-blocked * { border-color: #c4c9cc; }
