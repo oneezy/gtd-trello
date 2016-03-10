@@ -19,6 +19,7 @@
             "gtd-trello/list-separators/list-separators.js",
             "gtd-trello/list-labels/list-labels.js",
             "gtd-trello/list-pipes/list-pipes.js",
+            "gtd-trello/list-projects/list-projects.js",
             "gtd-trello/gtd-trello.js"],
 
         "css": [
@@ -30,7 +31,8 @@
             "gtd-trello/card-labels/card-labels.css",
             "gtd-trello/list-separators/list-separators.css",
             "gtd-trello/list-labels/list-labels.css",
-            "gtd-trello/list-pipes/list-pipes.css"],
+            "gtd-trello/list-pipes/list-pipes.css",
+            "gtd-trello/list-projects/list-projects.css"],
 
         "run_at": "document_end"
     }],

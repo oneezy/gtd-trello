@@ -26,6 +26,7 @@ $(document).ready(function() {
    GTD_RemoveDates();
    GTD_ListLabels();
    GTD_ListSeparators();
+   GTD_ListProjects();
    GTD_LayoutPipes();
 
 
@@ -38,6 +39,7 @@ $(document).ready(function() {
          GTD_RemoveDates();
          GTD_ListLabels();
          GTD_ListSeparators();
+         GTD_ListProjects();
          GTD_LayoutPipes();
       },50);
    });
@@ -50,6 +52,7 @@ $(document).ready(function() {
          GTD_RemoveDates();
          GTD_ListLabels();
          GTD_ListSeparators();
+         GTD_ListProjects();
          GTD_LayoutPipes();
       },50);
    });
