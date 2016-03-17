@@ -20,7 +20,7 @@
 /* List Card Counts */
 .gtd-trello .list-wrapper .list.gtd-white .list-header .list-header-num-cards { background: #000; }
 .gtd-trello .list-wrapper .list.gtd-blue .list-header .list-header-num-cards { background: #00c2e0; }
-.gtd-trello .list-wrapper .list.gtd-darkblue .list-header .list-header-num-cards { border-top: 7px solid #0079bf; }
+.gtd-trello .list-wrapper .list.gtd-darkblue .list-header .list-header-num-cards { background: #0079bf; }
 .gtd-trello .list-wrapper .list.gtd-yellow .list-header .list-header-num-cards { background: #e6c60d; }
 .gtd-trello .list-wrapper .list.gtd-orange .list-header .list-header-num-cards { background: #ffab4a; }
 .gtd-trello .list-wrapper .list.gtd-red .list-header .list-header-num-cards { background: #eb5a46; }
