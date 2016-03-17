@@ -1,10 +1,16 @@
 /************************************************************************
 	GTD Trello (Board Tabs)
 *************************************************************************/
-/* Board Wrapper */
+/* Main Header */
 .gtd-trello #header { border: 10px solid transparent; }
+
+/* Board Header */
 .gtd-trello .board-header { background: rgba(0,0,0, .15); line-height: 0; padding: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; }
-.gtd-trello .board-canvas { border-top: 15px solid transparent; }
-.gtd-trello .board-header { background: rgba(0,0,0, .15); line-height: 0; padding: 0; }
 .gtd-trello .board-header .gtd-tab { background: rgba(255,255,255, .15); display: inline-block; padding: 8px; border-radius: 7px 7px 0 0; }
 .gtd-trello .board-header .gtd-tab .board-header-btns.mod-right { position: absolute; top: 0; right: 0; }
+
+/* Board Canvas */
+.gtd-trello .board-canvas { border-top: 15px solid transparent; }
+
+/* Board Lists */
+.gtd-trello .list-wrapper:first-child { margin-left: 30px; }

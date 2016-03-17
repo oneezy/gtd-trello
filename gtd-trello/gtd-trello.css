@@ -6,7 +6,6 @@
 
 /* List Wrapper */
 .gtd-trello .list-wrapper { position: relative; }
-.gtd-trello .list-wrapper:first-child { margin-left: 30px; }
 
 /* List Header */
 .gtd-trello .list-wrapper .list-header { min-height: 18px; line-height: 21px; padding: 8px 34px 4px 10px; }
