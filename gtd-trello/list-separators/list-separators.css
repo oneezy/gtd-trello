@@ -1,5 +1,6 @@
 /************************************************************************
 	GTD Trello (SEPARATORS)
 *************************************************************************/
-.gtd-trello .gtd-separator { margin-right: 50px !important; margin-left: 50px !important; }
-.gtd-trello .gtd-separator:active ~ .placeholder { background: lime !important; }
+.gtd-trello .gtd-space { margin-right: 50px !important; margin-left: 50px !important; }
+.gtd-trello .gtd-spaceright { margin-right: 50px !important; margin-left: 0 !important; }
+.gtd-trello .gtd-spaceleft { margin-right: 0 !important; margin-left: 50px !important; }

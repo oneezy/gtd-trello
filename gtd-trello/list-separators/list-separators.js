@@ -5,22 +5,21 @@
    function GTD_ListSeparators(){
 
       // Add "right" separator class
-      $('h2:contains(" (SEPARATOR)")').parents('.js-list').addClass('gtd-separator');
+      $('h2:contains("SPACE")').parents('.list-wrapper').addClass('gtd-space');
+      $('h2:contains("SPACE RIGHT)")').parents('.list-wrapper').addClass('gtd-spaceright');
+      $('h2:contains("SPACE LEFT")').parents('.list-wrapper').addClass('gtd-spaceleft');
 
       // Remove Text...
-      $('h2:contains(" (SEPARATOR)")').each(function(){
-         $(this).html($(this).html().split(" (SEPARATOR)").join(""));
+      $('h2:contains("SPACE")').each(function(){
+         $(this).html($(this).html().split("(SPACE)").join(""));
       });
 
-      // Style placeholder
-      // var gangsta = $('.gtd-separator').attr('class');
+      $('h2:contains("SPACE RIGHT")').each(function(){
+         $(this).html($(this).html().split("(SPACE RIGHT)").join(""));
+      });
 
-      // $('body').on('mousedown', '.gtd-separator', function() {
-      //    $('body').addClass('gangsta');
-      // });
-
-      // $('body').on('mousedown', '.gtd-separator', function() {
-      //    $(this).addClass('gangsta');
-      // });
+      $('h2:contains("(SPACE LEFT)")').each(function(){
+         $(this).html($(this).html().split("(SPACE LEFT)").join(""));
+      });
 
    }
