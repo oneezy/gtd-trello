@@ -11,7 +11,7 @@
 .gtd-trello .list-wrapper.gtd-pipe .list .list-cards {  }
 
 /* Card Cover */
-.gtd-trello .list-wrapper.gtd-pipe .list .list-cards .list-card { text-align: center; background: transparent; border: none; }
+.gtd-trello .list-wrapper.gtd-pipe .list .list-cards .list-card { text-align: center; background: transparent; border: none !important; }
 .gtd-trello .list-wrapper.gtd-pipe .list .list-cards .list-card .list-card-cover { position: relative; display: inline-block; width: 80px !important; height: 80px !important; border-radius: 100%; background-position: center; }
 
 /* Cards Details */
