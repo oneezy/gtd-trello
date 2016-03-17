@@ -37,8 +37,8 @@ $ cd gtd-trello
 
 ### LINKS: Development Board & Demos
 
-**DEMO: ** https://trello.com/b/oRSeLRW0/gtd-trello-example <br>
-**DEVELOPMENT: ** https://trello.com/b/oRSeLRW0/gtd-trello-example
+**DEMO:** https://trello.com/b/oRSeLRW0/gtd-trello-example <br>
+**DEVELOPMENT:** https://trello.com/b/oRSeLRW0/gtd-trello-example
 <br>
 <br>
 
