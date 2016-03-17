@@ -7,6 +7,7 @@ This is an opensource Chrome extension for [Trello] that allows you to visualize
 ### Features
 Currently, the only way to use any of these features is by manually typing specific commands into the "List Title" name, or "Card Label" name. Eventually, all features will be enabled/disabled from an elegant popup menu.. but for now, bare with me.
 
+
 * **Board Tabs:** Turns your Trello board into a "Folder Tab" structure <br>
 * **List Labels:** Adds colored border to the top of lists for better organization <br>
 * **List Separators:** Adds space around lists for better organization <br>
@@ -39,11 +40,15 @@ $ cd gtd-trello
 
 **DEMO:** https://trello.com/b/oRSeLRW0/gtd-trello-example <br>
 **DEVELOPMENT:** https://trello.com/b/oRSeLRW0/gtd-trello-example
-<br>
-<br>
 
+----------
+**IMPORTANT!**
+----------
+You'll have to refresh the Trello Board page when navigating to it from direct link. It's a bug I'm working on fixing ;)
+----------
+----------
 
-### More to come...
+### More to come... When I get ze' sleep. . .
 
    [Trello]: <https://trello.com>
    [Agile]: <https://en.wikipedia.org/wiki/Agile_software_development>
