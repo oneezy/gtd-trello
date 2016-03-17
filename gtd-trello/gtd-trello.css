@@ -11,7 +11,7 @@
 .gtd-trello .list-wrapper .list-header { min-height: 18px; line-height: 21px; padding: 8px 34px 4px 10px; }
 
 /* List Card Details */
-.gtd-trello .list-card { border-bottom: 1px solid #ccc !important; }
+.gtd-trello .list-card { border-bottom: 1px solid rgba(0, 0, 0, .2) !important; }
 
 /* List Avatar */
 .gtd-trello .list-wrapper .list .member { background: transparent; }
