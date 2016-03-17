@@ -3,35 +3,45 @@
 	GTD Trello (List Labels)
 *************************************************************************/
 
-/* Priority (List Labels) */
-.gtd-trello .list-card-details.priority-1 { border-left: 1px solid #ccc; }
-.gtd-trello .list-card-details.priority-2 { border-left: 3px solid #ccc; }
-.gtd-trello .list-card-details.priority-3 { border-left: 7px solid #ccc; }
-.gtd-trello .list-card-details.priority-4 { border-left: 11px solid #ccc; }
+/* List Borders */
+.gtd-trello .list-wrapper .list.gtd-white { border-top: 7px solid #fff; }
+.gtd-trello .list-wrapper .list.gtd-blue { border-top: 7px solid #00c2e0; }
+.gtd-trello .list-wrapper .list.gtd-darkblue { border-top: 7px solid #0079bf; }
+.gtd-trello .list-wrapper .list.gtd-yellow { border-top: 7px solid #e6c60d; }
+.gtd-trello .list-wrapper .list.gtd-orange { border-top: 7px solid #ffab4a; }
+.gtd-trello .list-wrapper .list.gtd-red { border-top: 7px solid #eb5a46; }
+.gtd-trello .list-wrapper .list.gtd-purple { border-top: 7px solid #c377e0; }
+.gtd-trello .list-wrapper .list.gtd-pink { border-top: 7px solid #ff80ce; }
+.gtd-trello .list-wrapper .list.gtd-green { border-top: 7px solid #51e898; }
+.gtd-trello .list-wrapper .list.gtd-darkgreen { border-top: 7px solid #61bd4f; }
+.gtd-trello .list-wrapper .list.gtd-gray { border-top: 7px solid #c4c9cc; }
+.gtd-trello .list-wrapper .list.gtd-darkgray { border-top: 7px solid #4d4d4d; }
+
+/* List Card Counts */
+.gtd-trello .list-wrapper .list.gtd-white .list-header .list-header-num-cards { background: #000; }
+.gtd-trello .list-wrapper .list.gtd-blue .list-header .list-header-num-cards { background: #00c2e0; }
+.gtd-trello .list-wrapper .list.gtd-darkblue .list-header .list-header-num-cards { border-top: 7px solid #0079bf; }
+.gtd-trello .list-wrapper .list.gtd-yellow .list-header .list-header-num-cards { background: #e6c60d; }
+.gtd-trello .list-wrapper .list.gtd-orange .list-header .list-header-num-cards { background: #ffab4a; }
+.gtd-trello .list-wrapper .list.gtd-red .list-header .list-header-num-cards { background: #eb5a46; }
+.gtd-trello .list-wrapper .list.gtd-purple .list-header .list-header-num-cards { background: #c377e0; }
+.gtd-trello .list-wrapper .list.gtd-pink .list-header .list-header-num-cards { background: #ff80ce; }
+.gtd-trello .list-wrapper .list.gtd-green .list-header .list-header-num-cards { background: #51e898; }
+.gtd-trello .list-wrapper .list.gtd-darkgreen .list-header .list-header-num-cards { background: #61bd4f; }
+.gtd-trello .list-wrapper .list.gtd-gray .list-header .list-header-num-cards { background: #c4c9cc; }
+.gtd-trello .list-wrapper .list.gtd-darkgray .list-header .list-header-num-cards { background: #4d4d4d; }
 
 
-
-/************************************************************************
-	GTD Trello (Scrum Labels)
-*************************************************************************/
-
-/* Scrum (List Borders) */
-.gtd-trello .list-wrapper .list.gtd-backlog { border-top: 7px solid #fff; }
-.gtd-trello .list-wrapper .list.gtd-todo { border-top: 7px solid #00c2e0; }
-.gtd-trello .list-wrapper .list.gtd-doing { border-top: 7px solid #e6c60d; }
-.gtd-trello .list-wrapper .list.gtd-done { border-top: 7px solid #51e898; }
-.gtd-trello .list-wrapper .list.gtd-blocked { border-top: 7px solid #c4c9cc; }
-
-/* Scrum (List Card Counts) */
-.gtd-trello .list-wrapper .list.gtd-backlog .list-header .list-header-num-cards { background: #000; }
-.gtd-trello .list-wrapper .list.gtd-todo .list-header .list-header-num-cards { background: #00c2e0; }
-.gtd-trello .list-wrapper .list.gtd-doing .list-header .list-header-num-cards { background: #e6c60d; }
-.gtd-trello .list-wrapper .list.gtd-done .list-header .list-header-num-cards { background: #51e898; }
-.gtd-trello .list-wrapper .list.gtd-blocked .list-header .list-header-num-cards { background: #c4c9cc; }
-
-/* Scrum (Border Colors) */
-.gtd-trello .list.gtd-backlog * { border-color: #fff; }
-.gtd-trello .list.gtd-todo * { border-color: #00c2e0; }
-.gtd-trello .list.gtd-doing * { border-color: #e6c60d; }
-.gtd-trello .list.gtd-done * { border-color: #51e898; }
-.gtd-trello .list.gtd-blocked * { border-color: #c4c9cc; }
+/* Border Colors */
+.gtd-trello .list.gtd-white * { border-color: #ffffff; }
+.gtd-trello .list.gtd-blue * { border-color: #00c2e0; }
+.gtd-trello .list.gtd-darkblue * { border-color: #0079bf; }
+.gtd-trello .list.gtd-yellow * { border-color: #e6c60d; }
+.gtd-trello .list.gtd-orange * { border-color: #ffab4a; }
+.gtd-trello .list.gtd-red * { border-color: #eb5a46; }
+.gtd-trello .list.gtd-purple * { border-color: #c377e0; }
+.gtd-trello .list.gtd-pink * { border-color: #ff80ce; }
+.gtd-trello .list.gtd-green * { border-color: #51e898; }
+.gtd-trello .list.gtd-darkgreen * { border-color: #61bd4f; }
+.gtd-trello .list.gtd-gray * { border-color: #c4c9cc; }
+.gtd-trello .list.gtd-darkgray * { border-color: #4d4d4d; }
