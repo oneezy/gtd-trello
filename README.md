@@ -9,7 +9,7 @@ This is an opensource Chrome extension for [Trello] that allows you to visualize
 
 
 ##### &nbsp; &nbsp; B E F O R E  &nbsp; &nbsp; &nbsp; &nbsp; --> &nbsp; &nbsp; &nbsp; &nbsp;  A F T E R &nbsp; &nbsp; &nbsp; &nbsp;  --> &nbsp; &nbsp; &nbsp; &nbsp;  V I S I O N
-<a href="https://www.patreon.com/oneezy">
+<a href="https://trello.com/b/oRSeLRW0/gtd-trello-demo">
 ![alt text](http://oneezy.com/www/gtd/gtd-trello.gif "GTD Trello - Before/ After/ Vision")
 </a>
 
