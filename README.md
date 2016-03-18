@@ -3,21 +3,15 @@
 
 This is an opensource Chrome extension for [Trello] that allows you to visualize your Trello boards in unique ways! It follows best practices borrowed from the [Agile], [GTD], and [4 Hour Work Week] methods... and bakes them right into your Trello board! The result?... Turning your Trello board into the ultimate platform for Getting Things Done!
 <br>
+<br>
 
-<table style="border: 1px solid transparent; width: 100%">
-   <tr>
-      <th style="border: 1px solid transparent;" width="60%"></th>
-      <th style="border: 1px solid transparent;" width="50%"></th>
-   </tr>
-   <tr style="border: 1px solid transparent;">
-       <td style="color: #2B9DDF; border: 1px solid transparent; text-align: left; vertical-align: bottom;">B E F O R E  &nbsp; &nbsp; // &nbsp; &nbsp; A F T E R &nbsp; &nbsp; // &nbsp; &nbsp; V I S I O N</td>
-       <td style="vertical-align: top; border: 1px solid transparent; text-align: right;"></td>
-   </tr>
-   <tr style="border: 1px solid transparent;">
-        <td style="border: 1px solid transparent;"><a href="https://www.patreon.com/oneezy">![alt text](http://oneezy.com/www/gtd/gtd-trello.gif "GTD Trello - Before/ After/ Vision")</a></td>
-        <td style="vertical-align: middle; border: 1px solid transparent; text-align: left;"><a href="https://www.patreon.com/oneezy">![alt text](http://oneezy.com/www/gtd/gtd-trello-support.png "Support GTD Trello")</a></td>
-      </tr>
-</table>
+
+##### &nbsp; &nbsp; B E F O R E  &nbsp; &nbsp; &nbsp; &nbsp; --> &nbsp; &nbsp; &nbsp; &nbsp;  A F T E R &nbsp; &nbsp; &nbsp; &nbsp;  --> &nbsp; &nbsp; &nbsp; &nbsp;  V I S I O N
+<a href="https://www.patreon.com/oneezy">
+![alt text](http://oneezy.com/www/gtd/gtd-trello.gif "GTD Trello - Before/ After/ Vision")
+</a>
+
+<br>
 
 ### Features
 Currently, the only way to use any of these features is by manually typing specific commands into the "List Title" name, or "Card Label" name. Eventually, all features will be enabled/disabled from an elegant popup menu.. but for now, bare with me.
@@ -65,7 +59,9 @@ You'll have to refresh the Trello Board page when navigating to it from direct l
 ----------
 ----------
 
-### More to come... When I get ze' sleep. . .
+<a href="https://www.patreon.com/oneezy">
+![alt text](http://oneezy.com/www/gtd/gtd-trello-support.png "Support GTD Trello")
+</a>
 
    [Trello]: <https://trello.com>
    [Agile]: <http://amzn.to/1pss1B7>
