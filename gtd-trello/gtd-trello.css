@@ -15,4 +15,5 @@
 
 /* List Avatar */
 .gtd-trello .list-wrapper .list .member { background: transparent; }
-.gtd-trello .list-wrapper .list .member-avatar { border-radius: 100%; }
+.gtd-trello .list-wrapper .list .member .member-initials { background: transparent; background-color: rgb(196, 201, 204); border-radius: 100%; }
+.gtd-trello .list-wrapper .list .member .member-avatar { border-radius: 100%; }

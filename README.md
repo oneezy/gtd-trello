@@ -15,7 +15,7 @@ This is an opensource Chrome extension for [Trello] that allows you to visualize
 
 <br>
 
-### Features
+### Current Features
 Currently, the only way to use any of these features is by manually typing specific commands into the "List Title" name, or "Card Label" name. Eventually, all features will be enabled/disabled from an elegant popup menu.. but for now, bare with me.
 
 * **Board Tabs:** Turns your Trello board into a "Folder Tab" structure <br>
@@ -26,6 +26,7 @@ Currently, the only way to use any of these features is by manually typing speci
 * **List Projects:** This creates a way to see "Projects" more visually (best used with [cardsync]) <br>
 * **Card Counts:** This displays number of cards in your list and takes on the color of your "List Color" <br>
 * **Card Dates:** This adds visual animations to your cards with "Due Dates" <br>
+* **Card Heights:** This sets a minimum height on cards so you see more information overall <br>
 * **Card Labels:** This adds specific styling to your cards <br>
 <br>
 
