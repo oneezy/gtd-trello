@@ -1,7 +1,7 @@
 <a href="https://www.patreon.com/oneezy">
 ![alt text](http://oneezy.com/www/gtd/logo-new-new.png "GTD Trello")
 </a>
-# GTD Trello (Version 0.0.3)
+# GTD Trello (Version 0.3.6)
 
 This is an opensource Chrome extension for [Trello] that allows you to visualize your Trello boards in unique ways! It follows best practices borrowed from the [Agile], [GTD], and [4 Hour Work Week] methods... and bakes them right into your Trello board! The result?... Turning your Trello board into the ultimate platform for Getting Things Done!
 <br>
