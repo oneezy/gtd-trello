@@ -9,7 +9,7 @@
 
         // Remove "(PIPE)" text from list titles
         $('h2:contains("(PIPE)")').each(function(){
-            $(this).html($(this).html().split(" (PIPE)").join(""));
+            $(this).html($(this).html().split("(PIPE)").join(""));
         });
 
         // Show "Card Details"
@@ -26,7 +26,16 @@
              $(this).parent().find(".list-card-details")
                 .clone().appendTo('body')
                 .addClass('gtd-active')
-                .css({ 'position' : 'fixed', 'top' : top+ 'px', 'left' : position+ 'px' });
+                .css({
+                    'position' : 'fixed',
+                    'top' : top+ 'px',
+                    'opacity' : '0',
+                    'left' : position+ 'px'
+                })
+                .animate({
+                    opacity: 1,
+                    left: position+20+ 'px'
+                }, 250 );
         });
 
         // Remove "Card Details"
@@ -34,5 +43,3 @@
             $('.list-card-details.gtd-active').remove();
         });
     }
-
-    GTD_LayoutPipes();
