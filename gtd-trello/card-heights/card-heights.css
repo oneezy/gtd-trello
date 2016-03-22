@@ -5,7 +5,7 @@
 
 /* Limits Card Height */
 .gtd-trello .list-wrapper .list.gtd-height .list-card { transition: all 0.5s ease-out; overflow: hidden; max-height: 50px; }
-.gtd-trello .list-wrapper .list.gtd-height .list-card:after { content: ""; display: block; position: absolute; right: 0; bottom: 0; left: 0; height: 20px; width: 100%; background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); z-index: 999;}
+.gtd-trello .list-wrapper .list.gtd-height .list-card:after { content: ""; display: block; position: absolute; right: 0; bottom: 0; left: 0; height: 10px; width: 100%; background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); z-index: 999;}
 
 /* Shows full height on hover */
 .gtd-trello .list-wrapper .list.gtd-height .list-card:hover { overflow: visible; max-height: 300px; }
