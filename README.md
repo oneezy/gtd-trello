@@ -22,7 +22,7 @@ Some of these features work by default, while some have to be enabled through us
 
 ##### &nbsp;&nbsp;&nbsp; DEFAULT
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Board Tabs:** Turns your Trello board into a "Folder Tab" structure <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Counts:** This displays the number of cards in your list and takes on the color of your "List Color" (by default, it's black) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Counts:** Displays the number of cards in your list and takes on the color of your "List Color" (deafault is black) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Dates:** This adds visual animations to your cards that have "Due Dates" <br>
 <br>
 
@@ -53,9 +53,9 @@ Some of these features work by default, while some have to be enabled through us
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **List Layouts:** This styles your lists in unique ways that helps you visualize your data more efficiently <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PIPE) - This shrinks your list small and only shows the background "cover" image attached, shows data on hover``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PIPE) - Shrinks your list small and only shows the background "cover" image, shows data on hover``` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PROJECTS) - This creates a way to see "Epics" or "Projects" more visually, best used with```[cardsync] <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(HEIGHT) - This sets a minimum height on cards so you see more information, hover over card to see full height```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(HEIGHT) - Sets a minimum height on cards so you see more data (hover over cards to see full height)```
 <br><br>
 
 
