@@ -116,7 +116,7 @@ You'll have to refresh the Trello Board page when navigating to it from direct l
 ----------
 
 <a href="https://www.patreon.com/oneezy">
-![alt text](http://oneezy.com/www/gtd/gtd-trello-support.png "Support GTD Trello")
+![alt text](http://oneezy.com/www/gtd/gtd-trello-support-new.png "Support GTD Trello")
 </a>
 
    [Trello]: <https://trello.com>
