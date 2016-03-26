@@ -1,7 +1,7 @@
 <a href="https://www.patreon.com/oneezy">
 ![alt text](http://oneezy.com/www/gtd/logo-new-new.png "GTD Trello")
 </a>
-# GTD Trello (Version 0.3.6)
+# GTD Trello (Version 0.4.0)
 
 This is an opensource Chrome extension for [Trello] that allows you to visualize your Trello boards in unique ways! It follows best practices borrowed from the [Agile], [GTD], and [4 Hour Work Week] methods... and bakes them right into your Trello board! The result?... Turning your Trello board into the ultimate platform for Getting Things Done!
 <br>
@@ -15,21 +15,70 @@ This is an opensource Chrome extension for [Trello] that allows you to visualize
 
 <br>
 
-### Current Features
-Currently, the only way to use any of these features is by manually typing specific commands into the "List Title" name, or "Card Label" name. Eventually, all features will be enabled/disabled from an elegant popup menu.. but for now, bare with me.
-
-* **Board Tabs:** Turns your Trello board into a "Folder Tab" structure <br>
-* **List Labels:** Adds colored border to the top of lists for better organization <br>
-* **List Separators:** Adds space around lists for better organization <br>
-* **List Colors:** This adds a colored border to the top of your lists (use Trello colors) <br>
-* **List Pipes:** This shrinks your list small and only shows the BG image attached, shows data on hover <br>
-* **List Projects:** This creates a way to see "Projects" more visually (best used with [cardsync]) <br>
-* **Card Counts:** This displays number of cards in your list and takes on the color of your "List Color" <br>
-* **Card Dates:** This adds visual animations to your cards with "Due Dates" <br>
-* **Card Heights:** This sets a minimum height on cards so you see more information overall <br>
-* **Card Labels:** This adds specific styling to your cards <br>
+### Features
+Some of these features work by default, while some have to be enabled through user input. By typing certain text into the "List Title", "Card Title", or "Card Label", the features will be turned on or off. Below I'll specify which features are default and which ones are manual input along with the "(TEXT)" keyword that enables each feature. Eventually all features will be enabled/disabled from a pretty popup menu..but for now, bare with me.
+<br>
 <br>
 
+##### &nbsp;&nbsp;&nbsp; DEFAULT
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Board Tabs:** Turns your Trello board into a "Folder Tab" structure <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Counts:** This displays the number of cards in your list and takes on the color of your "List Color" (by default, it's black) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Dates:** This adds visual animations to your cards that have "Due Dates" <br>
+<br>
+
+
+##### &nbsp;&nbsp;&nbsp; LIST TITLE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **List Separators:** Adds space around lists for better organization <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(SPACE) - Adds space on left and right sides of list``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(SPACE-R) - Adds space on the right sides of list``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(SPACE-L) - Adds space on the left sides of list``` <br>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **List Colors:** Adds "Trello" colored borders to the top of lists for better organization <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(WHITE)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(BLUE)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(DARK BLUE)``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(YELLOW)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(ORANGE)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(RED)``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PURPLE)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PINK)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(GREEN)``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(DARK GREEN)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(GRAY)```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(DARK GRAY)``` <br>
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **List Layouts:** This styles your lists in unique ways that helps you visualize your data more efficiently <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PIPE) - This shrinks your list small and only shows the background "cover" image attached, shows data on hover``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PROJECTS) - This creates a way to see "Epics" or "Projects" more visually, best used with```[cardsync] <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(HEIGHT) - This sets a minimum height on cards so you see more information, hover over card to see full height```
+<br><br>
+
+
+##### &nbsp;&nbsp;&nbsp; CARD TITLE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Separators:** This adds a separator in your lists to allow you to group cards more efficiently <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```---TITLE---```
+<br><br>
+
+
+##### &nbsp;&nbsp;&nbsp; CARD LABEL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Priority Labels:** This adds a "weight" to your cards so you can visually see what's most important and what's not <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PRIORITY: 1) - This adds a "small" border to the left of your cards``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PRIORITY: 2) - This adds a "medium" border to the left of your cards``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PRIORITY: 3) - This adds a "large" border to the left of your cards``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • ```(PRIORITY: 4) - This adds an "extra large" border to the left of your cards``` <br>
+
+---
+
+Please refer to the [GTD Trello Demo] board to see examples of these features in action (after you install the extension).
+
+---
+
+<br>
 ### Getting Started
 For users and beta testers, click "Download ZIP"
 
@@ -75,6 +124,7 @@ You'll have to refresh the Trello Board page when navigating to it from direct l
    [GTD]: <http://amzn.to/1Z8Lrr3>
    [4 Hour Work Week]: <http://amzn.to/1psuOKG>
    [cardsync]: <https://trello.com/cardsync>
+   [GTD Trello Demo]: <https://trello.com/b/oRSeLRW0/gtd-trello-demo>
    [Git]: <http://www.git-scm.com>
    [Github]: <https://github.com>
    [Extensions]: <chrome://extensions>

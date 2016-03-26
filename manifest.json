@@ -1,7 +1,7 @@
 {
     "name": "GTD Trello",
     "description": "Get Things Done with Trello!",
-    "version": "0.3.6",
+    "version": "0.4.0",
     "manifest_version": 2,
     "icons": {
         "128": "images/icon.png"
@@ -16,6 +16,7 @@
             "gtd-trello/card-counts/card-counts.js",
             "gtd-trello/card-dates/card-dates.js",
             "gtd-trello/card-labels/card-labels.js",
+            "gtd-trello/card-separators/card-separators.js",
             "gtd-trello/card-heights/card-heights.js",
             "gtd-trello/list-separators/list-separators.js",
             "gtd-trello/list-labels/list-labels.js",
@@ -30,6 +31,7 @@
             "gtd-trello/card-counts/card-counts.css",
             "gtd-trello/card-dates/card-dates.css",
             "gtd-trello/card-labels/card-labels.css",
+            "gtd-trello/card-separators/card-separators.css",
             "gtd-trello/card-heights/card-heights.css",
             "gtd-trello/list-separators/list-separators.css",
             "gtd-trello/list-labels/list-labels.css",

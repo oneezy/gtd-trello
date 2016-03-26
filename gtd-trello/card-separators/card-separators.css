@@ -1,0 +1,14 @@
+/************************************************************************
+	GTD Trello (CARD SEPARATORS)
+*************************************************************************/
+.gtd-trello .gtd-separator { background: transparent; border: none !important; margin: 20px 0 0px; text-align: center; }
+.gtd-trello .gtd-separator:hover { background: transparent; border: none !important; }
+.gtd-trello .gtd-separator:first-child { margin: 0; }
+.gtd-trello .gtd-separator:after { content: ""; display: block; position: absolute; top: 40%; right: 0; left: 0; width: 100%; height: 1px; background: #ccc; opacity: .5; }
+
+.gtd-trello .gtd-separator .list-card-title { background: #E2E4E6; text-transform: uppercase; font-size: 11px; display: inline-block; padding: 0 5px; color: rgba(77,77,77, .3); }
+.gtd-trello .gtd-separator .icon-edit { top: 0; right: 0; bottom: 0; left: 0; width: 100%; opacity: 0; }
+.gtd-trello .gtd-separator .icon-edit:before { opacity: 0; }
+.gtd-trello .gtd-separator .icon-edit:hover { opacity: 0; }
+.gtd-trello .gtd-separator .icon-edit:focus { opacity: 0; }
+.gtd-trello .gtd-separator .icon-edit:active { opacity: 0; }
