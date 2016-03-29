@@ -9,3 +9,17 @@
 .gtd-trello .list-card-details.priority-2 { border-left: 3px solid #ccc; }
 .gtd-trello .list-card-details.priority-3 { border-left: 7px solid #ccc; }
 .gtd-trello .list-card-details.priority-4 { border-left: 11px solid #ccc; }
+
+/* Card Status */
+.gtd-backlog *, .gtd-new *, .gtd-doing *, .gtd-testing *, .gtd-ready *, .gtd-done *, .gtd-blocked *, .gtd-problem *, .gtd-staging  *, .gtd-live * { color: rgba(0, 0, 0, .27) !important; }
+
+.gtd-trello .list-card.gtd-backlog { background: rgba(196, 201, 204, 1); }
+.gtd-trello .list-card.gtd-new { background: rgba(0, 194, 224, .47); }
+.gtd-trello .list-card.gtd-doing { background: rgba(230, 198, 13, .47); }
+.gtd-trello .list-card.gtd-testing { background: rgba(255, 171, 74, .47); }
+.gtd-trello .list-card.gtd-ready { background: rgba(255, 128, 206, .47); }
+.gtd-trello .list-card.gtd-done { background: rgba(81, 232, 152, .47); }
+.gtd-trello .list-card.gtd-blocked { background: rgba(77, 77, 77, .47); }
+.gtd-trello .list-card.gtd-problem { background: rgba(255, 0, 66, .47); }
+.gtd-trello .list-card.gtd-staging  { background: rgba(195, 119, 224, .47); }
+.gtd-trello .list-card.gtd-live { background: rgba(0, 121, 191, .47); }
