@@ -1,0 +1,6 @@
+/************************************************************************
+	GTD Trello (Card Links)
+*************************************************************************/
+.gtd-trello .list-card .gtd-link { display: inline-block; color: inherit; }
+.gtd-active-link { transition: color 0.25s ease-out; display: inline-block; color: rgba(0,0,0, 0); }
+.gtd-active-link:hover { display: inline-block; color: rgba(0,0,0, .47); }
