@@ -17,6 +17,7 @@
 .gtd-trello .list-wrapper .list.gtd-gray { border-top: 7px solid #c4c9cc; }
 .gtd-trello .list-wrapper .list.gtd-darkgray { border-top: 7px solid #4d4d4d; }
 
+
 /* List Card Counts */
 .gtd-trello .list-wrapper .list.gtd-white .list-header .list-header-num-cards { background: #000; }
 .gtd-trello .list-wrapper .list.gtd-blue .list-header .list-header-num-cards { background: #00c2e0; }
@@ -45,3 +46,18 @@
 .gtd-trello .list.gtd-darkgreen * { border-color: #61bd4f; }
 .gtd-trello .list.gtd-gray * { border-color: #c4c9cc; }
 .gtd-trello .list.gtd-darkgray * { border-color: #4d4d4d; }
+
+
+/* Link Colors */
+.gtd-trello .list.gtd-white a * { color: #00c2e0; }
+.gtd-trello .list.gtd-blue a * { color: #00c2e0; }
+.gtd-trello .list.gtd-darkblue a * { color: #0079bf; }
+.gtd-trello .list.gtd-yellow a * { color: #e6c60d; }
+.gtd-trello .list.gtd-orange a * { color: #ffab4a; }
+.gtd-trello .list.gtd-red a * { color: #eb5a46; }
+.gtd-trello .list.gtd-purple a * { color: #c377e0; }
+.gtd-trello .list.gtd-pink a * { color: #ff80ce; }
+.gtd-trello .list.gtd-green a * { color: #51e898; }
+.gtd-trello .list.gtd-darkgreen a * { color: #61bd4f; }
+.gtd-trello .list.gtd-gray a * { color: #c4c9cc; }
+.gtd-trello .list.gtd-darkgray a * { color: #4d4d4d; }
