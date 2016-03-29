@@ -22,6 +22,7 @@ $(document).ready(function() {
    GTD_BoardTabs();
    GTD_CardCounts();
    GTD_CardLabels();
+   GTD_CardLinks();
    GTD_CardSeparators();
    GTD_CardHeights();
    GTD_DueDates();
@@ -37,6 +38,7 @@ $(document).ready(function() {
       setTimeout(function() {
          GTD_CardCounts();
          GTD_CardLabels();
+         GTD_CardLinks();
          GTD_CardSeparators();
          GTD_CardHeights();
          GTD_DueDates();
@@ -45,13 +47,14 @@ $(document).ready(function() {
          GTD_ListSeparators();
          GTD_ListProjects();
          GTD_LayoutPipes();
-      },50);
+      },20);
    });
 
    $('body').keyup(function(){
       setTimeout(function() {
          GTD_CardCounts();
          GTD_CardLabels();
+         GTD_CardLinks();
          GTD_CardSeparators();
          GTD_CardHeights();
          GTD_DueDates();
@@ -60,7 +63,7 @@ $(document).ready(function() {
          GTD_ListSeparators();
          GTD_ListProjects();
          GTD_LayoutPipes();
-      },50);
+      },20);
    });
 
 });
