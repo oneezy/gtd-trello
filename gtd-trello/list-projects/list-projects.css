@@ -3,13 +3,6 @@
 *************************************************************************/
 .gtd-trello .gtd-projects { margin-right: 20px !important; margin-left: 20px !important; }
 .gtd-trello .gtd-projects .list-cards { padding-top: 5px; }
-.gtd-trello .gtd-projects .list-card { background: #c4c9cc; height: 200px; margin: 20px 6% 32px; border-radius: 12px; position: relative; }
+.gtd-trello .gtd-projects .list-card { height: 200px; margin: 20px 6% 32px; border-radius: 12px; position: relative; }
 .gtd-trello .gtd-projects .list-card:before { content: ""; position: absolute; top: -20px; left: 50%; width: 50%; height: 20px; background: inherit; border-radius: 12px 12px 0 0; margin: 0 0 0 -25%; }
 .gtd-trello .gtd-projects .list-card:after { content: ""; position: absolute; top: -9px; left: calc(50% + 15px); width: calc(50% - 30px); height: 9px; background: #E2E4E6; border-radius: 4px 4px 0 0; margin: 0 0 0 -25%; }
-
-/* Project States */
-.gtd-trello .gtd-projects .list-card.gtd-new { background: #00c2e0; }
-.gtd-trello .gtd-projects .list-card.gtd-doing { background: #e6c60d; }
-.gtd-trello .gtd-projects .list-card.gtd-done { background: #51e898; }
-.gtd-trello .gtd-projects .list-card.gtd-blocked { background: #c4c9cc; }
-.gtd-trello .gtd-projects .list-card.gtd-problem { background: #ff0042; }
