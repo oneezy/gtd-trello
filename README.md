@@ -1,7 +1,7 @@
 <a href="https://www.patreon.com/oneezy">
 ![alt text](http://oneezy.com/www/gtd/logo-new-new.png "GTD Trello")
 </a>
-# GTD Trello (Version 0.4.0)
+# GTD Trello (Version 0.4.2)
 
 This is an opensource Chrome extension for [Trello] that allows you to visualize your Trello boards in unique ways! It follows best practices borrowed from the [Agile], [GTD], and [4 Hour Work Week] methods... and bakes them right into your Trello board! The result?... Turning your Trello board into the ultimate platform for Getting Things Done!
 <br>
@@ -24,6 +24,7 @@ Some of these features work by default, while some have to be enabled through us
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Board Tabs:** Turns your Trello board into a "Folder Tab" structure <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Counts:** Displays the number of cards in your list and takes on the color of your "List Color" (deafault is black) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Dates:** This adds visual animations to your cards that have "Due Dates" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ **Card Links:** Adds the ability to have "hyperlinks" inside card titles <br>
 <br>
 
 
