@@ -12,3 +12,14 @@
 .gtd-trello .gtd-separator .icon-edit:hover { opacity: 0; }
 .gtd-trello .gtd-separator .icon-edit:focus { opacity: 0; }
 .gtd-trello .gtd-separator .icon-edit:active { opacity: 0; }
+
+.gtd-trello .gtd-separator .list-card-labels { display: none; }
+
+
+/* TEMP (Card Backs... Separators + Priority)*/
+.gtd-trello .gtd-separator-back { width: 100%; height: 1px; background: #ccc; margin: 1rem 0; }
+.gtd-trello .gtd-separator-back * { opacity: 0; }
+.gtd-trello .gtd-separator-priority { color: rgb(255, 0, 66); }
+
+.gtd-trello .gtd-separator .badges,
+.gtd-trello .gtd-separator label { display: none; }

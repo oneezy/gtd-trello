@@ -1,12 +1,159 @@
 /************************************************************************
 	GTD Trello (Due Dates)
 *************************************************************************/
+.badges { width: 100%; margin: 20px 0 0; }
+
 /* Badges (default) */
 .badge.is-due-past { background: #cacbcd; }
-.badge.is-due-now { background: #cacbcd; animation: blink 1.5s infinite linear; }
-.badge.is-due-soon { background: #cacbcd; animation: blink 1.5s infinite linear; }
-.badge.is-due-future {  }
-.badge.is-due-future .badge-text { color: #00C2E0; }
+.badge.is-due-now { background: #cacbcd; animation: blink 1.5s infinite linear !important; }
+.badge.is-due-soon { background: #cacbcd; }
+.badge.is-due-future { background: #ccc; }
+.badge.is-due-future .badge-text { color: inherit; }
+
+/* Calendar Style */
+.badges .badge.is-due-past,
+.badges .badge.is-due-now,
+.badges .badge.is-due-soon,
+.badges .badge.is-due-future {
+    border: 2px solid black;
+    border-top: 14px solid black;
+    border-radius:8px;
+    text-align: center !important;
+    display: block;
+    height: 24px;
+    overflow: visible;
+    float: right;
+    background: rgba(0,0,0,.25);
+    margin: 0 0 4px;
+}
+
+
+.badges .badge.is-due-past     { border-color: rgba(236, 148, 136, 1); background: rgba(236, 148, 136, .5); opacity: .5; }
+.badges .badge.is-due-now      { border-color: rgba(235, 90, 70, 1); background: rgba(235, 90, 70, .25); }
+.badges .badge.is-due-soon     { border-color: rgba(230, 198, 13, 1); background: rgba(230, 198, 13, .25); }
+.badges .badge.is-due-future   { border-color: rgba(0, 194, 224, 1); background: rgba(0, 194, 224, .25); }
+
+.badges .badge.is-due-past .badge-icon     { background: rgba(236, 148, 136, 1) !important; }
+.badges .badge.is-due-now .badge-icon      { background: rgba(235, 90, 70, 1) !important; }
+.badges .badge.is-due-soon .badge-icon     { background: rgba(230, 198, 13, 1) !important; }
+.badges .badge.is-due-future .badge-icon   { background: rgba(0, 194, 224, 1) !important; }
+
+
+
+/* Colored Lists */
+.gtd-trello .list[class*="gtd-"] .badges .badge.is-due-past .badge-text:first-line,
+.gtd-trello .list[class*="gtd-"] .badges .badge.is-due-now .badge-text:first-line,
+.gtd-trello .list[class*="gtd-"] .badges .badge.is-due-soon .badge-text:first-line,
+.gtd-trello .list[class*="gtd-"] .badges .badge.is-due-future .badge-text:first-line {
+    color: rgba(0,0,0,.54);
+    font-size: 7pt;
+    line-height: 12pt;
+    padding: 0 0 10px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+
+
+.gtd-trello .list .badges .badge.is-due-past .badge-text:first-line,
+.gtd-trello .list .badges .badge.is-due-now .badge-text:first-line,
+.gtd-trello .list .badges .badge.is-due-soon .badge-text:first-line,
+.gtd-trello .list .badges .badge.is-due-future .badge-text:first-line
+{
+    color: rgba(0,0,0, .5);
+    font-size: 7pt;
+    line-height: 12pt;
+    padding: 0 0 10px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+/* Default Lists */
+.gtd-trello .list.gtd-white .badges .badge.is-due-past .badge-text:first-line,
+.gtd-trello .list.gtd-white .badges .badge.is-due-now .badge-text:first-line,
+.gtd-trello .list.gtd-white .badges .badge.is-due-soon .badge-text:first-line,
+.gtd-trello .list.gtd-white .badges .badge.is-due-future .badge-text:first-line,
+
+.gtd-trello .list.gtd-black .badges .badge.is-due-past .badge-text:first-line,
+.gtd-trello .list.gtd-black .badges .badge.is-due-now .badge-text:first-line,
+.gtd-trello .list.gtd-black .badges .badge.is-due-soon .badge-text:first-line,
+.gtd-trello .list.gtd-black .badges .badge.is-due-future .badge-text:first-line,
+
+.gtd-trello .list.gtd-red .badges .badge.is-due-past .badge-text:first-line,
+.gtd-trello .list.gtd-red .badges .badge.is-due-now .badge-text:first-line,
+.gtd-trello .list.gtd-red .badges .badge.is-due-soon .badge-text:first-line,
+.gtd-trello .list.gtd-red .badges .badge.is-due-future .badge-text:first-line,
+
+.gtd-trello .list.gtd-darkgray .badges .badge.is-due-past .badge-text:first-line,
+.gtd-trello .list.gtd-darkgray .badges .badge.is-due-now .badge-text:first-line,
+.gtd-trello .list.gtd-darkgray .badges .badge.is-due-soon .badge-text:first-line,
+.gtd-trello .list.gtd-darkgray .badges .badge.is-due-future .badge-text:first-line,
+
+.gtd-trello .list.gtd-darkblue .badges .badge.is-due-past .badge-text:first-line,
+.gtd-trello .list.gtd-darkblue .badges .badge.is-due-now .badge-text:first-line,
+.gtd-trello .list.gtd-darkblue .badges .badge.is-due-soon .badge-text:first-line,
+.gtd-trello .list.gtd-darkblue .badges .badge.is-due-future .badge-text:first-line {
+    color: rgba(256,256,256, 1);
+    font-size: 7pt;
+    line-height: 12pt;
+    padding: 0 0 10px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+
+
+.badges .badge.is-due-past .badge-text,
+.badges .badge.is-due-now .badge-text,
+.badges .badge.is-due-soon .badge-text,
+.badges .badge.is-due-future .badge-text {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.25);
+    display: inline-block;
+    word-spacing: 9999px;
+    width: 30px;
+    text-transform: uppercase;
+    font-size: 14pt;
+    line-height: 16pt;
+    white-space: normal;
+    font-weight: bold;
+    transform: translateY(-15px);
+}
+
+
+/* Hidden */
+.badges .badge.is-due-past .icon-clock,
+.badges .badge.is-due-now .icon-clock,
+.badges .badge.is-due-soon .icon-clock,
+.badges .badge.is-due-future .icon-clock { display: none; }
+
+.badges .badge[class*="is-due-"] .badge-icon {
+    display: block !important;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    background: transparent;
+}
+
+.badges .badge[class*="is-due-"] .badge-icon:before {
+	display: inline-block !important;
+	content: "";
+    text-align: center;
+	position: absolute;
+    left: 2px;
+	right: 2px;
+	bottom: 0;
+    color: white !important;
+	background: transparent;
+}
+
+.badges .badge.is-due-past .badge-icon:before { content: "✕"; font-size: 10px; }
+.badges .badge.is-due-now .badge-icon:before { content: "❗"; }
+.badges .badge.is-due-soon .badge-icon:before { content: "❗"; }
+.badges .badge.is-due-future .badge-icon:before { content: "✲"; }
 
 /* Badges (PIPE) */
 .gtd-trello .gtd-pipe .list-card .list-card-cover { border: 7px solid #cacbcd; }
@@ -15,12 +162,15 @@
 
 .gtd-trello .list-card.is-due-past .list-card-cover:before { background: #EC9488; opacity: .5;  }
 .gtd-trello .list-card.is-due-past .list-card-cover:after { border: 7px solid #CF513D !important; }
-.gtd-trello .list-card.is-due-now .list-card-cover:after { border: 7px solid #CF513D !important; animation: blink 1.5s infinite linear; }
-.gtd-trello .list-card.is-due-soon .list-card-cover:after { border: 7px solid #F2D600 !important; animation: blink 1.5s infinite linear; }
+.gtd-trello .list-card.is-due-now .list-card-cover:after { border: 7px solid #CF513D !important; animation: blink 1.5s infinite linear !important; }
+.gtd-trello .list-card.is-due-soon .list-card-cover:after { border: 7px solid #F2D600 !important; }
 .gtd-trello .list-card.is-due-future .list-card-cover:after { border: 7px solid #00C2E0 !important; }
+
+
+
 
 @keyframes blink {
     0% { opacity: 1; }
-    50% { opacity: .25; }
+    50% { opacity: .5; }
     100% { opacity: 1; }
 }

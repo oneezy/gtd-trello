@@ -1,6 +1,9 @@
 /************************************************************************
 	GTD Trello (Default/ Reset)
 *************************************************************************/
+
+/* DEFAULT: Reset
+*************************************************************************/
 /* Board Wrapper */
 #board { overflow: auto !important; }
 
@@ -8,7 +11,25 @@
 .gtd-trello .list-wrapper { position: relative; }
 
 /* List Header */
-.gtd-trello .list-wrapper .list-header { min-height: 18px; line-height: 21px; padding: 8px 34px 4px 10px; }
+.gtd-trello .list-wrapper .list-header 		{ min-height: 80px; line-height: 21px; padding: 8px 34px 4px 10px; }
+.gtd-trello .list-wrapper .list-header h2	{ width: 100% }
+.gtd-trello .list-wrapper .list-header textarea {
+	position: absolute;
+	top: 7px;
+	left: 8px;
+	right: 0;
+	bottom: 4px;
+	margin: 0 !important;
+	padding: 2px 0 0 29px !important;
+	height: 78px;
+	max-height: 78px;
+	width: calc(100% - 16px);
+	z-index: 9999;
+	font-size: 18px;
+	line-height: 20px;
+	background: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
 
 /* List Card Details */
 .gtd-trello .list-card { border-bottom: 1px solid rgba(0, 0, 0, .2) !important; }
@@ -17,3 +38,158 @@
 .gtd-trello .list-wrapper .list .member { background: transparent; }
 .gtd-trello .list-wrapper .list .member .member-initials { background: transparent; background-color: rgb(196, 201, 204); border-radius: 100%; }
 .gtd-trello .list-wrapper .list .member .member-avatar { border-radius: 100%; }
+
+/* Card Badges */
+.gtd-trello .list-wrapper .list-card .badges     	 { margin: 20px 0 4px; }
+.gtd-trello .list-wrapper .list-card .badges *   	 { color: #8c8c8c; }
+.gtd-trello .list-wrapper .list-card .badges .badge  { width: 100%; display: block; float: left; text-align: left; }
+
+/* Hidden */
+.icon-subscribe { display: none !important; }
+[title="You are subscribed to this card."] { display: none !important; }
+
+
+
+/************************************************************************
+	EXTENSION: Ultimello
+*************************************************************************/
+.connections-menu-icon { padding: 4px; top: 3px; right: 32px; border-radius: 3px; color: #999; }
+.connections-menu-icon:hover { background: #d6dadc; }
+
+
+
+
+
+/************************************************************************
+	EXTENSION: Trello Extended
+*************************************************************************/
+
+/*
+	List Header
+***********************************/
+
+/* Dollars */
+
+.list-header .dollars-positive:first-letter,
+.list-header .dollars-negative:first-letter { display: block; position: absolute; top: 0; right: 0; }
+
+.list-header .points-badge,
+.list-header .dollars-badge { display: inline-block; margin: 0; padding: 0; background: transparent; border: none; opacity: 1; color: #8c8c8c !important; }
+
+.list-header .points-badge { font-size: 9pt; float: left; text-align: left; width: 120px; }
+
+
+.list-header .dollars-badge { font-size: 16pt; display: inline-block !important; text-indent: 0 !important; width: auto !important; position: absolute; top: 46px; right: 12px; font-weight: normal !important; }
+.list-header .dollars-badge:before { display: inline-block !important; text-indent: 0 !important; }
+.list-header .dollars-badge:after { display: none !important; }
+
+
+
+/*
+	List Card
+***********************************/
+.list-card .points-badge,
+.list-card .dollars-badge {
+	display: block;
+	font-size: 9pt;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background: transparent;
+	border: none;
+	opacity: 1;
+	color: rgba(140, 140, 140, 1) !important;
+}
+
+/* Common styles */
+.list-card .badges .badge { position: relative; font-size: 9pt; margin: 0 !important; }
+
+.list-card .points-badge,
+.list-card .dollars-badge { width: 100% !important; text-indent: 18px !important; }
+
+.list-card .points-badge:before,
+.list-card .dollars-badge:before { position: absolute; left: 5px; text-indent: 0 !important; }
+
+.points-badge:after,
+.dollars-badge:after { text-indent: 3px !important; }
+
+/* Hours */
+.points-badge:before { display: inline-block; padding: 0 6px 0 0; }
+.points-badge:after { content: "hours"; display: inline-block; }
+
+/* Hours (estimated)*/
+.points-estimated { opacity: .72; }
+.points-estimated:before { content: "🕒"; color: rgba(0, 194, 224, 1); }
+.points-estimated:after { content: " hours (estimate)"; }
+
+/* Hours (additional) */
+.points-additional { opacity: 1; }
+.points-additional:before { content: "🕒"; color: rgba(0, 121, 191, 1); }
+.points-additional:after { content: "hours (actual)"; }
+
+/* Dollars (incoming) */
+.dollars-badge.dollars-positive:before { content: "➜"; display: inline-block; color: #61bd4f !important; transform: rotate(-90deg); }
+.dollars-badge.dollars-positive:after  { content: " (incoming)"; display: inline-block; }
+
+/* Dollars (outgoing) */
+.dollars-badge.dollars-negative:before { content: "➜"; display: inline-block; color: #eb5a46 !important; transform: rotate(90deg); }
+.dollars-badge.dollars-negative:after  { content: " (outgoing)"; display: inline-block; }
+
+/* Attachments */
+.badge[title="Attachments"]:after  { content: " (attachments)"; display: inline-block; }
+
+
+
+
+
+/* EXTENSION: Multi-Select
+*************************************************************************/
+.list:hover .list-header-num-cards { color: rgba(0,0,0,0) !important; text-shadow: 1px 1px 0 rgba(0,0,0,0) !important; }
+
+/* List checkboxes */
+.list label {
+	left: 13px !important;
+	top: 11px !important;
+	width: 15px !important;
+	height: 15px !important;
+	background: transparent !important;
+	border: none !important;
+	overflow: hidden !important;
+}
+
+.list input[type="checkbox"] {
+	-webkit-appearance: none !important;
+	cursor: pointer !important;
+	position: relative !important;
+	display: block !important;
+	background: rgba(256,256,256, 1) !important;
+	opacity: .5;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 15px !important;
+	height: 15px !important;
+	min-height: inherit !important;
+	line-height: 0 !important;
+	border-radius: 3px !important;
+	border: 1px solid rgba(0,0,0, .25) !important;
+}
+
+.list input[type="checkbox"]:before {
+	content: '' !important;
+	display: block !important;
+	width: 14px !important;
+	height: 14px !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.list input[type="checkbox"]:checked { opacity: 1 !important; }
+.list input[type="checkbox"]:checked:before { content: '✔' !important; top: 7px !important; left: 1px !important; }
+
+/* Card checkboxes */
+.list-card label { left: 9px !important; top: 9px !important; }
+.list-card input[type="checkbox"] { border: 1px solid rgba(0,0,0, 1) !important; opacity: 1; }

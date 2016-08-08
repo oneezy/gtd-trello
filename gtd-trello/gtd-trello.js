@@ -9,24 +9,19 @@ $(document).ready(function() {
    // Append ".gtd-trello" class to body
    $("body").addClass("gtd-trello");
 
-   // $("body").find(".board-canvas").clone().appendTo(".board-main-content").addClass('gtd-scrum');
-
-   // $('h2:contains("(SCRUM)")').parents('.list-wrapper')
-   //    .wrapAll('<div class="u-fancy-scrollbar ui-sortable gtd-scrum" />')
-   //    .parents(".board-canvas")
-   //    .find('.gtd-scrum')
-   //    .appendTo(".board-canvas");
-
-
    // Run Functions...
    GTD_BoardTabs();
+   GTD_CardBadges();
    GTD_CardCounts();
    GTD_CardLabels();
+   // GTD_CardTime();
+   // GTD_CardTag();
    GTD_CardLinks();
    GTD_CardSeparators();
    GTD_CardHeights();
    GTD_DueDates();
    GTD_RemoveDates();
+   GTD_ListDirectory();
    GTD_ListLabels();
    GTD_ListSeparators();
    GTD_ListProjects();
@@ -54,6 +49,8 @@ $(document).ready(function() {
       setTimeout(function() {
          GTD_CardCounts();
          GTD_CardLabels();
+         // GTD_CardTime();
+         // GTD_CardTag();
          GTD_CardLinks();
          GTD_CardSeparators();
          GTD_CardHeights();
@@ -66,4 +63,11 @@ $(document).ready(function() {
       },20);
    });
 
+});
+
+$(document).ready(function() {
+   setTimeout(function() {
+      GTD_CardCounts();
+      GTD_ListDirectory();
+  },500);
 });

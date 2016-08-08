@@ -16,6 +16,7 @@
 .gtd-trello .list-wrapper .list.gtd-darkgreen { border-top: 7px solid #61bd4f; }
 .gtd-trello .list-wrapper .list.gtd-gray { border-top: 7px solid #c4c9cc; }
 .gtd-trello .list-wrapper .list.gtd-darkgray { border-top: 7px solid #4d4d4d; }
+.gtd-trello .list-wrapper .list.gtd-black { border-top: 7px solid #000; }
 
 
 /* List Card Counts */
@@ -33,8 +34,23 @@
 .gtd-trello .list-wrapper .list.gtd-darkgray .list-header .list-header-num-cards { background: #4d4d4d; }
 
 
+/* List Card Labels */
+.gtd-trello .list-wrapper .list.gtd-white .list-card-labels .card-label { background: #000; }
+.gtd-trello .list-wrapper .list.gtd-blue .list-card-labels .card-label { background: #00c2e0; }
+.gtd-trello .list-wrapper .list.gtd-darkblue .list-card-labels .card-label { background: #0079bf; }
+.gtd-trello .list-wrapper .list.gtd-yellow .list-card-labels .card-label { background: #e6c60d; }
+.gtd-trello .list-wrapper .list.gtd-orange .list-card-labels .card-label { background: #ffab4a; }
+.gtd-trello .list-wrapper .list.gtd-red .list-card-labels .card-label { background: #eb5a46; }
+.gtd-trello .list-wrapper .list.gtd-purple .list-card-labels .card-label { background: #c377e0; }
+.gtd-trello .list-wrapper .list.gtd-pink .list-card-labels .card-label { background: #ff80ce; }
+.gtd-trello .list-wrapper .list.gtd-green .list-card-labels .card-label { background: #51e898; }
+.gtd-trello .list-wrapper .list.gtd-darkgreen .list-card-labels .card-label { background: #61bd4f; }
+.gtd-trello .list-wrapper .list.gtd-gray .list-card-labels .card-label { background: #c4c9cc; }
+.gtd-trello .list-wrapper .list.gtd-darkgray .list-card-labels .card-label { background: #4d4d4d; }
+
+
 /* Border Colors */
-.gtd-trello .list.gtd-white * { border-color: #c4c9cc; }
+.gtd-trello .list.gtd-white * { border-color: #000; }
 .gtd-trello .list.gtd-blue * { border-color: #00c2e0; }
 .gtd-trello .list.gtd-darkblue * { border-color: #0079bf; }
 .gtd-trello .list.gtd-yellow * { border-color: #e6c60d; }
@@ -46,10 +62,11 @@
 .gtd-trello .list.gtd-darkgreen * { border-color: #61bd4f; }
 .gtd-trello .list.gtd-gray * { border-color: #c4c9cc; }
 .gtd-trello .list.gtd-darkgray * { border-color: #4d4d4d; }
+.gtd-trello .list.gtd-black * { border-color: #000; }
 
 
 /* Link Colors */
-.gtd-trello .list.gtd-white a * { color: #00c2e0; }
+.gtd-trello .list.gtd-white a * { color: #4d4d4d; }
 .gtd-trello .list.gtd-blue a * { color: #00c2e0; }
 .gtd-trello .list.gtd-darkblue a * { color: #0079bf; }
 .gtd-trello .list.gtd-yellow a * { color: #e6c60d; }
@@ -61,3 +78,70 @@
 .gtd-trello .list.gtd-darkgreen a * { color: #61bd4f; }
 .gtd-trello .list.gtd-gray a * { color: #c4c9cc; }
 .gtd-trello .list.gtd-darkgray a * { color: #4d4d4d; }
+.gtd-trello .list.gtd-black a * { color: #000; }
+
+
+/* Badges */
+.gtd-trello .list.gtd-white .badges *:before { color: rgba(140, 140, 140, 1) !important; }
+.gtd-trello .list.gtd-blue .badges *:before { color: #00c2e0 !important; }
+.gtd-trello .list.gtd-darkblue .badges *:before { color: #0079bf !important; }
+.gtd-trello .list.gtd-yellow .badges *:before { color: #e6c60d !important; }
+.gtd-trello .list.gtd-orange .badges *:before { color: #ffab4a !important; }
+.gtd-trello .list.gtd-red .badges *:before { color: #eb5a46 !important; }
+.gtd-trello .list.gtd-purple .badges *:before { color: #c377e0 !important; }
+.gtd-trello .list.gtd-pink .badges *:before { color: #ff80ce !important; }
+.gtd-trello .list.gtd-green .badges *:before { color: #51e898 !important; }
+.gtd-trello .list.gtd-darkgreen .badges *:before { color: #61bd4f !important; }
+.gtd-trello .list.gtd-gray .badges *:before { color: #c4c9cc !important; }
+.gtd-trello .list.gtd-darkgray .badges *:before { color: #4d4d4d !important; }
+
+/* List Header Badges */
+.gtd-trello .list.gtd-white .list-header .badge:before { color: rgba(140, 140, 140, 1) !important; }
+.gtd-trello .list.gtd-blue .list-header .badge:before { color: #00c2e0 !important; }
+.gtd-trello .list.gtd-darkblue .list-header .badge:before { color: #0079bf !important; }
+.gtd-trello .list.gtd-yellow .list-header .badge:before { color: #e6c60d !important; }
+.gtd-trello .list.gtd-orange .list-header .badge:before { color: #ffab4a !important; }
+.gtd-trello .list.gtd-red .list-header .badge:before { color: #eb5a46 !important; }
+.gtd-trello .list.gtd-purple .list-header .badge:before { color: #c377e0 !important; }
+.gtd-trello .list.gtd-pink .list-header .badge:before { color: #ff80ce !important; }
+.gtd-trello .list.gtd-green .list-header .badge:before { color: #51e898 !important; }
+.gtd-trello .list.gtd-darkgreen .list-header .badge:before { color: #61bd4f !important; }
+.gtd-trello .list.gtd-gray .list-header .badge:before { color: #c4c9cc !important; }
+.gtd-trello .list.gtd-darkgray .list-header .badge:before { color: #4d4d4d !important; }
+
+
+/* Due Dates (calendar style) */
+.gtd-trello .list .list-card .badges { position: relative; }
+.gtd-trello .list .list-card .badges .badge[class*="is-due-"] { width: 36px; position: absolute; right: 0; bottom: 0; }
+.gtd-trello .list .list-card .badges .badge[class*="is-due-"] .badge-icon:before { color: rgba(256,256,256, 1) !important; }
+.gtd-trello .list .list-card .badges .badge:before { padding: 0; }
+
+/* Due Dates (badge) */
+.gtd-trello .list.gtd-white .badges .badge[class*="is-due-"] { background: rgba(140, 140, 140, .25) !important; }
+.gtd-trello .list.gtd-blue .badges .badge[class*="is-due-"] { background: rgba(0, 194, 224, .25) !important; }
+.gtd-trello .list.gtd-darkblue .badges .badge[class*="is-due-"] { background: rgba(0, 121, 191, .25) !important; }
+.gtd-trello .list.gtd-yellow .badges .badge[class*="is-due-"] { background: rgba(230, 198, 13, .25) !important; }
+.gtd-trello .list.gtd-orange .badges .badge[class*="is-due-"] { background: rgba(255, 171, 74, .25) !important; }
+.gtd-trello .list.gtd-red .badges .badge[class*="is-due-"] { background: rgba(235, 90, 70, .25) !important; }
+.gtd-trello .list.gtd-purple .badges .badge[class*="is-due-"] { background: rgba(195, 119, 224, .25) !important; }
+.gtd-trello .list.gtd-pink .badges .badge[class*="is-due-"] { background: rgba(255, 128, 206, .25) !important; }
+.gtd-trello .list.gtd-green .badges .badge[class*="is-due-"] { background: rgba(81, 232, 152, .25) !important; }
+.gtd-trello .list.gtd-darkgreen .badges .badge[class*="is-due-"] { background: rgba(97, 189, 79, .25) !important; }
+.gtd-trello .list.gtd-gray .badges .badge[class*="is-due-"] { background: rgba(196, 201, 204, .25) !important; }
+.gtd-trello .list.gtd-darkgray .badges .badge[class*="is-due-"] { background: rgba(77, 77, 77, .25) !important; }
+.gtd-trello .list.gtd-black .badges .badge[class*="is-due-"] { background: rgba(0, 0, 0, .25) !important; }
+
+/* Due Dates (badge icon) */
+.gtd-trello .list.gtd-white .badges .badge[class*="is-due-"] .badge-icon { background: rgba(0, 0, 0, 1) !important; }
+.gtd-trello .list.gtd-blue .badges .badge[class*="is-due-"] .badge-icon { background: rgba(0, 194, 224, 1) !important; }
+.gtd-trello .list.gtd-darkblue .badges .badge[class*="is-due-"] .badge-icon { background: rgba(0, 121, 191, 1) !important; }
+.gtd-trello .list.gtd-yellow .badges .badge[class*="is-due-"] .badge-icon { background: rgba(230, 198, 13, 1) !important; }
+.gtd-trello .list.gtd-orange .badges .badge[class*="is-due-"] .badge-icon { background: rgba(255, 171, 74, 1) !important; }
+.gtd-trello .list.gtd-red .badges .badge[class*="is-due-"] .badge-icon { background: rgba(235, 90, 70, 1) !important; }
+.gtd-trello .list.gtd-purple .badges .badge[class*="is-due-"] .badge-icon { background: rgba(195, 119, 224, 1) !important; }
+.gtd-trello .list.gtd-pink .badges .badge[class*="is-due-"] .badge-icon { background: rgba(255, 128, 206, 1) !important; }
+.gtd-trello .list.gtd-green .badges .badge[class*="is-due-"] .badge-icon { background: rgba(81, 232, 152, 1) !important; }
+.gtd-trello .list.gtd-darkgreen .badges .badge[class*="is-due-"] .badge-icon { background: rgba(97, 189, 79, 1) !important; }
+.gtd-trello .list.gtd-gray .badges .badge[class*="is-due-"] .badge-icon { background: rgba(196, 201, 204, 1) !important; }
+.gtd-trello .list.gtd-darkgray .badges .badge[class*="is-due-"] .badge-icon { background: rgba(77, 77, 77, 1) !important; }
+.gtd-trello .list.gtd-black .badges .badge[class*="is-due-"] .badge-icon { background: rgba(0, 0, 0, 1) !important; }

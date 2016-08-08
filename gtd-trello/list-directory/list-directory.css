@@ -1,0 +1,137 @@
+/************************************************************************
+	GTD Trello (DIRECTORY)
+*************************************************************************/
+
+/* Clear Fix */
+.gtd-trello .gtd-directory .list-card:before, .gtd-trello .gtd-directory .list-card::after { content: " "; display: table; }
+.gtd-trello .gtd-directory .list-card:after { clear: both; }
+.gtd-trello .gtd-directory .list-card { *zoom: 1; clear: both; float: left; min-width: 100%; }
+
+/* Resetting */
+.gtd-trello .gtd-directory { background: transparent; border: none !important; margin: 0 5px; width: 360px; }
+.gtd-trello .gtd-directory:hover { background: transparent; border: none !important; }
+.gtd-trello .gtd-directory:first-child { margin: 0; }
+.gtd-trello .gtd-directory .icon-edit { top: 0; right: 0; bottom: 0; left: 0; width: 100%; opacity: 0; }
+.gtd-trello .gtd-directory .icon-edit:before { opacity: 0; }
+.gtd-trello .gtd-directory .icon-edit:hover { opacity: 0; }
+.gtd-trello .gtd-directory .icon-edit:focus { opacity: 0; }
+.gtd-trello .gtd-directory .icon-edit:active { opacity: 0; }
+.gtd-trello .gtd-directory .list-card-details { padding: 0; overflow: visible; }
+.gtd-trello .gtd-directory .list-card-details .list-card-labels { margin: 0; position: absolute; right: calc(100% + 10px); top: 0; bottom: 0; width: 5px; border-radius: 0; overflow: visible; }
+.gtd-trello .gtd-directory .list-card-details .list-card-labels .card-label { height: 100%; padding: 0; margin: 0; }
+
+/* Directory Styles */
+.gtd-trello .gtd-directory .list-cards { margin-bottom: 10px; padding-bottom: 45px; position: relative; }
+.gtd-trello .gtd-directory .list-cards::before { position: absolute; left: 15px; z-index: 999; top: calc(100vh + 10px); height: 1px; width: 10px; display: block; background: rgba(0,0,0,.11); content: ""; }
+.gtd-trello .gtd-directory .list-cards::after { margin-left: 0; position: absolute; left: 15px; top: 10px; height: 100vh; width: 1px; display: block; background: rgba(0,0,0,.11); content: ""; }
+
+.gtd-trello .gtd-directory .list-card { background: none; margin: 0 0 3px 0; padding: 0px 4px 7px 10px; border-bottom: none !important; line-height: .75; min-height: auto; height: 13px; font-family: "Courier New", Courier, monospace; border-radius: 0; display: block; }
+.gtd-trello .gtd-directory .list-card-title { background: none; font-size: 16px; margin: 0; padding: 4px; display: block; color: rgba(77,77,77, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-root .list-card-title { color: rgba(0,0,0, .25); font-size: 12px; } /* root */
+.gtd-trello .gtd-directory .list-card:first-child { position: relative; margin-bottom: 10px; padding: 0px 4px 7px 20px; } /* root */
+
+
+.gtd-trello .gtd-directory .list-card.gtd-folder .list-card-labels:empty { display: block; }
+
+/* Root */
+.gtd-trello .gtd-directory .list-card.gtd-root { margin-left: 0; position: static; }
+.gtd-trello .gtd-directory .list-card.gtd-root::before {  }
+.gtd-trello .gtd-directory .list-card.gtd-root::after { position: absolute; left: 15px; top: 9px; height: 1px; width: 10px; display: block; background: rgba(0,0,0,.11); }
+
+
+
+
+/* Folder */
+.gtd-trello .gtd-directory .list-card.gtd-folder          			 		{ margin: 15px 0 3px  40px; position: relative; }
+.gtd-trello .gtd-directory .list-card.gtd-folder-1        			 		{ margin: 15px 0 3px  40px; position: relative; }
+.gtd-trello .gtd-directory .list-card.gtd-folder-2        			 		{ margin: 15px 0 3px  70px; position: relative; }
+.gtd-trello .gtd-directory .list-card.gtd-folder-3        			 		{ margin: 15px 0 3px 110px; position: relative; }
+.gtd-trello .gtd-directory .list-card.gtd-folder-4        			 		{ margin: 15px 0 3px 140px; position: relative; }
+.gtd-trello .gtd-directory .list-card.gtd-folder.no-label 			 		{ margin: 3px 0 3px 40px; font-size: 16px; color: rgba(77, 77, 77, .42); }
+
+.gtd-trello .gtd-directory .list-card.gtd-folder    .list-card-title 		{ font-size: 16px; color: rgba(0,0,0, 1); font-weight: bold; }
+.gtd-trello .gtd-directory .list-card.gtd-folder-1  .list-card-title 		{ font-size: 16px; color: rgba(0,0,0, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder-2  .list-card-title 		{ font-size: 16px; color: rgba(0,0,0, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder-3  .list-card-title 		{ font-size: 16px; color: rgba(0,0,0, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder-4  .list-card-title 		{ font-size: 16px; color: rgba(0,0,0, 1); }
+
+.gtd-trello .gtd-directory .list-card.gtd-folder.no-label .list-card-title  { font-size: 16px; color: rgba(77, 77, 77, .42); }
+
+.toggle-files { position: absolute; top: 0; right: 7px; }
+
+
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label { overflow: visible; }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label .list-card-title  			{ color: rgba(77,77,77, .42); } 	/* Default */
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-sky .list-card-title  		{ color: rgba(0,194,224, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-blue .list-card-title  		{ color: rgba(0,121,191, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-yellow .list-card-title  	{ color: rgba(230,198,13, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-orange .list-card-title  	{ color: rgba(255,171,74, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-red .list-card-title  		{ color: rgba(235,90,70, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-purple .list-card-title  	{ color: rgba(195,119,224, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-pink .list-card-title  		{ color: rgba(255,128,206, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-lime .list-card-title  		{ color: rgba(81,232,152, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-green .list-card-title  	{ color: rgba(97,189,79, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-folder.card-label-black .list-card-title  	{ color: rgba(77,77,77, 1); }
+
+
+
+/* File */
+.gtd-trello .gtd-directory .list-card * 		 		 { text-shadow: none !important; }
+
+.gtd-trello .gtd-directory .list-card.gtd-file  		 { margin-left: 30px; color: rgba(77, 77, 77, .42); margin-bottom: 0 !important; font-weight: normal; }
+.gtd-trello .gtd-directory .list-card.gtd-file-1         { margin-left: 60px;  }
+.gtd-trello .gtd-directory .list-card.gtd-file-2         { margin-left: 90px;  }
+.gtd-trello .gtd-directory .list-card.gtd-file-3         { margin-left: 120px; }
+.gtd-trello .gtd-directory .list-card.gtd-file-4         { margin-left: 150px; }
+
+.gtd-trello .gtd-directory .list-card.gtd-file .list-card-title { margin: 0 !important; text-indent: 24px; color: inherit; font-size: 14px; color: inherit; }
+
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label 			{ color: rgba(77,77,77, .42); border-left: 1px solid rgba(196,201,204, .22); } 	/* Default */
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-sky 		{ color: rgba(0,194,224, 1); border-left: 1px solid rgba(0,194,224, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-blue 		{ color: rgba(0,121,191, 1); border-left: 1px solid rgba(0,121,191, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-yellow 	{ color: rgba(230,198,13, 1); border-left: 1px solid rgba(230,198,13, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-orange 	{ color: rgba(255,171,74, 1); border-left: 1px solid rgba(255,171,74, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-red 		{ color: rgba(235,90,70, 1); border-left: 1px solid rgba(235,90,70, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-purple 	{ color: rgba(195,119,224, 1); border-left: 1px solid rgba(195,119,224, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-pink 		{ color: rgba(255,128,206, 1); border-left: 1px solid rgba(255,128,206, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-lime 		{ color: rgba(81,232,152, 1); border-left: 1px solid rgba(81,232,152, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-green 	{ color: rgba(97,189,79, 1); border-left: 1px solid rgba(97,189,79, .22); }
+.gtd-trello .gtd-directory .list-card.gtd-file.card-label-black 	{ color: rgba(77,77,77, 1); border-left: 1px solid rgba(77,77,77, .22); }
+
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label 			{ color: rgba(77,77,77, .42); background: transparent; } 	/* Default */
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-sky 		{ color: rgba(0,194,224, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-blue 	{ color: rgba(0,121,191, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-yellow 	{ color: rgba(230,198,13, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-orange 	{ color: rgba(255,171,74, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-red 		{ color: rgba(235,90,70, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-purple 	{ color: rgba(195,119,224, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-pink 	{ color: rgba(255,128,206, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-lime 	{ color: rgba(81,232,152, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-green 	{ color: rgba(97,189,79, 1); }
+.gtd-trello .gtd-directory .list-card.gtd-file .card-label-black 	{ color: rgba(77,77,77, 1); }
+
+/* Special Classes */
+.gtd-trello .gtd-directory .list-card.depends-on .list-card-title { opacity: .42; text-indent: 0; font-style: italic; font-size: 12px; }
+.gtd-trello .gtd-directory .list-card.depends-on .list-card-title::before { content: "../"; }
+.gtd-trello .gtd-directory .list-card.depends-on .list-card-title::after { content: ""; }
+
+.gtd-trello .gtd-directory .list-card.star { color: #ff006e !important; border-left: 1px solid #ff006e !important; }
+.gtd-trello .gtd-directory .list-card.star::after {  }
+
+.gtd-trello .gtd-directory .list-card.gtd-file-space *  { display: none; }
+.gtd-trello .gtd-directory .list-card.gtd-file-space { height: 1rem; padding: .25rem; margin: 3px 0 3px 10px; background: rgba(77, 77, 77, 0.07);  opacity: 0; transition: opacity .22s ease-in-out; }
+.gtd-trello .gtd-directory .list-card.gtd-file-space::after { content: "spacer"; text-indent: 40px; text-shadow: none !important; color: rgba(77, 77, 77, 0.22); }
+.gtd-trello .gtd-directory .list-card.gtd-file-space:hover { opacity: 1; transition: opacity .22s ease-in-out; }
+
+/* Toggle Classes */
+.gtd-collapsed { margin-top: 0 !important; }
+.gtd-expanded { margin-top: 0 !important; }
+
+
+
+
+/* Card editor */
+.gtd-trello .quick-card-editor .list-card { min-width: 240px; }
+.gtd-trello .quick-card-editor .quick-card-editor-buttons { transform: translateX(200px); }
+
+.gtd-trello .gtd-directory .card-composer { padding-bottom: 8px; position: relative; z-index: 99999; height: calc(100% + 100px); transform: translateY(61px); }

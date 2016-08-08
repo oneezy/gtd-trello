@@ -19,6 +19,7 @@
       $( 'h2:contains("(DARK GREEN)")' ).parents('.list').addClass('gtd-darkgreen');
       $( 'h2:contains("(GRAY)")' ).parents('.list').addClass('gtd-gray');
       $( 'h2:contains("(DARK GRAY)")' ).parents('.list').addClass('gtd-darkgray');
+      $( 'h2:contains("(BLACK)")' ).parents('.list').addClass('gtd-black');
 
       // Remove Text...
       $( 'h2:contains("(WHITE)")' ).each(function(){
@@ -67,6 +68,10 @@
 
       $( 'h2:contains("(DARK GRAY)")' ).each(function(){
          $(this).html($(this).html().split("(DARK GRAY)").join(""));
+      });
+
+      $( 'h2:contains("(BLACK)")' ).each(function(){
+         $(this).html($(this).html().split("(BLACK)").join(""));
       });
 
 
