@@ -25,53 +25,53 @@
 */
 
 
-function GTD_CardLinks(){
+function GTD_CardLinks() {
 
-      // Look in the card titles
-      $(".list-card-title").each(function() {
+    // Look in the card titles
+    $(".list-card-title").each(function() {
 
-         var GTDtext = $(this).html();
-         var GTDlinkEX = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig;
-         var GTDlink = GTDtext.replace(GTDlinkEX, "<a class='gtd-link' href='$1' target='_blank'>$1</a>");
+        var GTDtext = $(this).html();
+        var GTDlinkEX = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig;
+        var GTDlink = GTDtext.replace(GTDlinkEX, "<a class='gtd-link' href='$1' target='_blank'>$1</a>");
 
-         $( ".gtd-link:empty" ).remove();
+        $(".gtd-link:empty").remove();
 
-         // Re-write html w/ hyperlinks
-         $(this).html(GTDlink);
-      });
-
-
-      // Create card links...
-      $(".gtd-link").on( "mouseover", function() {
-          var rect   =   this.getBoundingClientRect (),
-              top    =   rect.top,
-              left   =   rect.left;
-
-           $(this)
-             .clone().appendTo('body')
-             .removeClass('gtd-link')
-             .addClass('gtd-active-link')
-             .css({
-                  'position' : 'fixed',
-                  'top' : top+ 'px',
-                  'left' : left+ 'px',
-                  'display' : 'inline-block',
-                  'z-index' : '99999'
-             });
-      });
+        // Re-write html w/ hyperlinks
+        $(this).html(GTDlink);
+    });
 
 
-      // Removing Card Links...
-      $( ".list-cards" ).scroll(function() {
-        $( ".gtd-active-link" ).remove();
-      });
+    // Create card links...
+    $(".gtd-link").on("mouseover", function() {
+        var rect = this.getBoundingClientRect(),
+            top = rect.top,
+            left = rect.left;
 
-      $( "#board, .list-wrapper, .list, .list-cards, .list-card" ).mousedown(function() {
-         $( ".gtd-active-link" ).remove();
-      });
+        $(this)
+            .clone().appendTo('body')
+            .removeClass('gtd-link')
+            .addClass('gtd-active-link')
+            .css({
+                'position': 'fixed',
+                'top': top + 'px',
+                'left': left + 'px',
+                'display': 'block',
+                'z-index': '99999'
+            });
+    });
 
-      $( "#board, .list-wrapper, .list" ).mouseenter(function() {
-        $( ".gtd-active-link" ).remove();
-      });
+
+    // Removing Card Links...
+    $(".list-cards").scroll(function() {
+        $(".gtd-active-link").remove();
+    });
+
+    $("#board, .list-wrapper, .list, .list-cards, .list-card").mousedown(function() {
+        $(".gtd-active-link").remove();
+    });
+
+    $("#board, .list-wrapper, .list").mouseenter(function() {
+        $(".gtd-active-link").remove();
+    });
 
 }

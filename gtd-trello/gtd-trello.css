@@ -32,7 +32,8 @@
 }
 
 /* List Card Details */
-.gtd-trello .list-card { border-bottom: 1px solid rgba(0, 0, 0, .2) !important; }
+.gtd-trello .list .list-card { border-bottom: 1px solid rgba(0, 0, 0, .2) !important; }
+.gtd-trello .list .list-card-title { font-size: 14px !important; line-height: 18px !important; }
 
 /* List Avatar */
 .gtd-trello .list-wrapper .list .member { background: transparent; }
@@ -137,7 +138,7 @@
 .dollars-badge.dollars-negative:after  { content: " (outgoing)"; display: inline-block; }
 
 /* Attachments */
-.badge[title="Attachments"]:after  { content: " (attachments)"; display: inline-block; }
+.list .badge[title="Attachments"]:after  { content: " (attachments)"; display: inline-block; }
 
 
 
@@ -193,3 +194,65 @@
 /* Card checkboxes */
 .list-card label { left: 9px !important; top: 9px !important; }
 .list-card input[type="checkbox"] { border: 1px solid rgba(0,0,0, 1) !important; opacity: 1; }
+
+
+
+
+
+/* EXTENSION: Agile Scrum For Trello
+*************************************************************************/
+
+/* Scrum Card Project (Default) */
+.scrum-card-project {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    line-height: 1;
+    vertical-align: 2px;
+    padding: 2px 3px;
+    border-radius: 3px;
+}
+
+/* Scrum Card Project (Colors) */
+
+.gtd-trello .list-wrapper .list .scrum-list-progress,
+.gtd-trello .list-wrapper .list .scrum-card-progress	      		  { background-color: #6f7375 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-white .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-white .scrum-card-progress        { background-color: #6f7375 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-black .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-black .scrum-card-progress 	      { background-color: #6f7375 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-darkgray .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-darkgray .scrum-card-progress     { background-color: #6f7375 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-gray .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-gray .scrum-card-progress 	      { background-color: #6f7375 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-blue .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-blue .scrum-card-progress         { background-color: #00c2e0 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-darkblue .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-darkblue .scrum-card-progress     { background-color: #0079bf !important; }
+
+.gtd-trello .list-wrapper .list.gtd-yellow .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-yellow .scrum-card-progress       { background-color: #e6c60d !important; }
+
+.gtd-trello .list-wrapper .list.gtd-orange .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-orange .scrum-card-progress       { background-color: #ffab4a !important; }
+
+.gtd-trello .list-wrapper .list.gtd-red .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-red .scrum-card-progress 	      { background-color: #eb5a46 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-purple .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-purple .scrum-card-progress       { background-color: #c377e0 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-pink .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-pink .scrum-card-progress 	      { background-color: #ff80ce !important; }
+
+.gtd-trello .list-wrapper .list.gtd-green .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-green .scrum-card-progress        { background-color: #51e898 !important; }
+
+.gtd-trello .list-wrapper .list.gtd-darkgreen .scrum-list-progress,
+.gtd-trello .list-wrapper .list.gtd-darkgreen .scrum-card-progress    { background-color: #61bd4f !important; }

@@ -20,12 +20,12 @@
       // TEMP
 
       // Add separator "back" class
-      $('.gtd-trello .checklist-item-details-text:contains("---")').parents('.checklist-item').addClass('gtd-separator-back');
+      //      $('.gtd-trello .checklist-item-details-text:contains("---")').parents('.checklist-item').addClass('gtd-separator-back');
 
       // Remove Text...
-      $('.gtd-trello .checklist-item-details-text:contains("---")').each(function(){
-         $(this).html($(this).html().split("---").join(""));
-      });
+        //   $('.gtd-trello .checklist-item-details-text:contains("---")').each(function(){
+        //      $(this).html($(this).html().split("---").join(""));
+        //   });
 
 
 
@@ -34,11 +34,11 @@
       // TEMP
 
       // Add bold "back" class
-      $('.gtd-trello .checklist-item-details-text:contains("* ")').parents('.checklist-item *').addClass('gtd-separator-priority');
+      //      $('.gtd-trello .checklist-item-details-text:contains("* ")').parents('.checklist-item *').addClass('gtd-separator-priority');
 
       // Remove Text...
-      $('.gtd-trello .checklist-item-details-text:contains("* ")').each(function(){
-         $(this).html($(this).html().split("* ").join(""));
-      });
+        //   $('.gtd-trello .checklist-item-details-text:contains("* ")').each(function(){
+        //      $(this).html($(this).html().split("* ").join(""));
+        //   });
 
    }

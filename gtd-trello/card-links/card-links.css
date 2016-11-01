@@ -1,9 +1,32 @@
 /************************************************************************
 	GTD Trello (Card Links)
 *************************************************************************/
-.gtd-trello .list-card .gtd-link { display: block; color: inherit; margin: 0 0 8px 4px; text-decoration: none; }
-.gtd-trello .list-card .gtd-link:before { content: "➜ "; text-decoration: none; letter-spacing: 1px; }
+
+
+/*.gtd-trello .list-card .gtd-link { display: block; color: inherit; text-decoration: none; }
+.gtd-trello .list-card .gtd-link:before { content: "➜ "; text-decoration: none; letter-spacing: 1px; display: inline-block; }
 
 .gtd-active-link { transition: color 0.25s ease-out; display: block; color: rgba(0,0,0, 0); text-decoration: none; }
 .gtd-active-link:before { content: "➜ "; text-decoration: none; letter-spacing: 1px; }
-.gtd-active-link:hover { display: block; color: rgba(0,0,0, .47); }
+.gtd-active-link:hover { display: block; color: rgba(0,0,0, .47); }*/
+
+
+/************************************************************************
+	GTD Trello (Card Links)
+*************************************************************************/
+
+.gtd-trello .list-card .gtd-link {
+    display: block;
+    color: inherit;
+}
+
+.gtd-active-link {
+    transition: color 0.25s ease-out;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0);
+}
+
+.gtd-active-link:hover {
+    display: block;
+    color: rgba(0, 0, 0, .47);
+}
