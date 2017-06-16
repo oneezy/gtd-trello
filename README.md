@@ -1,6 +1,5 @@
-<a href="https://www.patreon.com/oneezy">
-![alt text](http://oneezy.com/www/gtd/logo-new-new.png "GTD Trello")
-</a>
+![GTD Trello](http://oneezy.com/www/gtd/logo-new-new.png)
+
 # GTD Trello (Version 0.5.0)
 
 This is an opensource Chrome extension for [Trello] that allows you to visualize your Trello boards in unique ways! It follows best practices borrowed from the [Agile], [GTD], and [4 Hour Work Week] methods... and bakes them right into your Trello board! The result?... Turning your Trello board into the ultimate platform for Getting Things Done!
@@ -9,9 +8,9 @@ This is an opensource Chrome extension for [Trello] that allows you to visualize
 
 
 ##### &nbsp; &nbsp; B E F O R E  &nbsp; &nbsp; &nbsp; &nbsp; --> &nbsp; &nbsp; &nbsp; &nbsp;  A F T E R &nbsp; &nbsp; &nbsp; &nbsp;  --> &nbsp; &nbsp; &nbsp; &nbsp;  V I S I O N
-<a href="https://trello.com/b/oRSeLRW0/gtd-trello-demo">
-![alt text](http://oneezy.com/www/gtd/gtd-trello.gif "GTD Trello - Before/ After/ Vision")
-</a>
+
+
+![GTD Trello](http://oneezy.com/www/gtd/gtd-trello.gif)
 
 <br>
 
@@ -80,23 +79,29 @@ Please refer to the [GTD Trello Demo] board to see examples of these features in
 ---
 
 <br>
+
 ### Getting Started
+
 For users and beta testers, click "Download ZIP"
 
 For developers,
 You should have [Git] installed locally and a [Github] account:
 
-```sh
+```
+sh
 $ git clone https://github.com/oneezy/gtd-trello.git
 $ cd gtd-trello
 ```
 <br>
+
 ### Chrome Extension Installation
+
 * In your Chrome browser, navigate to your [Extensions] manager
 * Select the "Developer mode" checkbox
 * Click "Load unpacked extension..." button
 * Navigate to the folder **"gtd-trello"**
 * Enable the GTD Trello extension
+
 <br>
 <br>
 
@@ -116,9 +121,8 @@ You'll have to refresh the Trello Board page when navigating to it from direct l
 ----------
 ----------
 
-<a href="https://www.patreon.com/oneezy">
-![alt text](http://oneezy.com/www/gtd/gtd-trello-support-new.png "Support GTD Trello")
-</a>
+![Support GTD Trello](http://oneezy.com/www/gtd/gtd-trello-support-new.png)
+
 
    [Trello]: <https://trello.com>
    [Agile]: <http://amzn.to/1pss1B7>
